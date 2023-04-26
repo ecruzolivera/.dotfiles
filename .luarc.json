@@ -1,0 +1,13 @@
+{
+    "diagnostics.globals": [
+        "modkey",
+        "client",
+        "awesome",
+        "mymainmenu",
+        "mylauncher"
+    ],
+    "diagnostics.disable": [
+        "lowercase-global",
+        "undefined-global"
+    ]
+}
