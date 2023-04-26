@@ -1,5 +1,4 @@
-return
-{
+return {
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -29,28 +28,28 @@ return
         "vimdoc",
         "yaml",
       },
-    }
+    },
   },
   {
     -- LSP Configuration & Plugins
-    'neovim/nvim-lspconfig',
+    "neovim/nvim-lspconfig",
     dependencies = {
       -- Automatically install LSPs to stdpath for neovim
-      { 'williamboman/mason.nvim', config = true },
-      'williamboman/mason-lspconfig.nvim',
+      { "williamboman/mason.nvim", config = true },
+      "williamboman/mason-lspconfig.nvim",
 
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       -- Standalone UI for nvim-lsp progress. Eye candy for the impatient.
-      { 'j-hui/fidget.nvim',       opts = {} },
+      { "j-hui/fidget.nvim", opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
-      'folke/neodev.nvim',
+      "folke/neodev.nvim",
     },
   },
   {
     -- Autocompletion
-    'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
+    "hrsh7th/nvim-cmp",
+    dependencies = { "hrsh7th/cmp-nvim-lsp", "L3MON4D3/LuaSnip", "saadparwaiz1/cmp_luasnip" },
   },
 }

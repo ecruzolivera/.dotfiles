@@ -49,7 +49,7 @@ if not vim.g.vscode then
 
   -- LSP
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
-  vim.keymap.set("n", "gr", telescope.lsp_references, { buffer = true, desc = "Search References" })
+  vim.keymap.set("n", "gr", telescope.lsp_references, { desc = "Search References" })
   vim.keymap.set("n", "gk", vim.lsp.buf.hover)
   vim.keymap.set("n", "gI", vim.lsp.buf.implementation, { desc = "Goto Implementation" })
   vim.keymap.set("n", "gD", vim.lsp.buf.type_definition, { desc = "Goto Definition" })
@@ -57,7 +57,7 @@ if not vim.g.vscode then
   vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format" })
   vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, { desc = "Rename" })
   vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code Action" })
-  vim.keymap.set("n", "<leader>ls", telescope.lsp_document_symbols, { desc = "Document Symbols" })
+  vim.keymap.set("n", "<leader>ld", telescope.lsp_document_symbols, { desc = "Document Symbols" })
   vim.keymap.set("n", "<leader>lw", telescope.lsp_dynamic_workspace_symbols, { desc = "Workspace Symbols" })
 
   -- git

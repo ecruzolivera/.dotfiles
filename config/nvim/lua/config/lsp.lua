@@ -97,3 +97,17 @@ cmp.setup({
     { name = "luasnip" },
   },
 })
+
+-- Setup language servers.
+local lspconfig = require("lspconfig")
+
+lspconfig.tsserver.setup({
+  opts = {
+    diagnostics = { virtual_text = { prefix = "icons" } },
+    setup = {
+      clangd = function(_, opts)
+        opts.capabilities.offsetEncoding = { "utf-16" }
+      end,
+    },
+  },
+})
