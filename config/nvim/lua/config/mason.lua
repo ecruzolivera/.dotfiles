@@ -15,24 +15,25 @@ require("mason-tool-installer").setup({
   ensure_installed = {
     -- you can turn off/on auto_update per tool
     "bash-language-server",
-    "lua-language-server",
-    "vim-language-server",
-    "gopls",
-    "stylua",
-    "shellcheck",
     "editorconfig-checker",
     "gofumpt",
     "golines",
     "gomodifytags",
+    "gopls",
     "gotests",
     "impl",
     "json-to-struct",
+    "lua-language-server",
     "luacheck",
     "misspell",
+    "prettier",
     "revive",
+    "shellcheck",
     "shellcheck",
     "shfmt",
     "staticcheck",
+    "stylua",
+    "vim-language-server",
     "vint",
   },
   -- if set to true this will check each tool for updates. If updates
@@ -57,4 +58,11 @@ require("mason-tool-installer").setup({
   -- effect when running manually via ':MasonToolsInstall' etc....
   -- Default: nil
   debounce_hours = 5, -- at least 5 hours between attempts to install/update
+})
+
+require("mason-null-ls").setup({
+  ensure_installed = {
+    automatic_setup = true,
+    ensure_installed = { "jq" },
+  },
 })

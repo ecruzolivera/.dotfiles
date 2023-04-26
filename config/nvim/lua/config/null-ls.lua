@@ -41,10 +41,10 @@ local formatters = {
 }
 
 -- hover sources
-local hover = null_ls.builtins.hover
+-- local hover = null_ls.builtins.hover
 local hovs = {}
 -- completion sources
-local completion = null_ls.builtins.completion
+-- local completion = null_ls.builtins.completion
 local comps = {}
 
 local sources = merge(actions, diags)
