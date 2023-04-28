@@ -11,6 +11,9 @@ super + shift + x
 super + space
     rofi -show drun -show-icons
 
+super + p
+    rofi  -show find -modi find:~/.local/share/rofi/finder.sh
+
 # Lock Screen
 super + x; {x, s, r, p}
     {xlock, systemctl suspend, systemctl reboot, systemctl poweroff}
@@ -24,7 +27,7 @@ super + e; {e, t}
 ####################
 
 # Pulse Audio Volume Control
-super + p
+super + a
     pavucontrol
 
 # Pulse Audio Master Volume

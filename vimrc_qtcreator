@@ -28,6 +28,23 @@ inoremap <C-s> <ESC>:w<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" clear highlight
+nnoremap <Space>h :nohls<CR>
+" easy colon
+nnoremap ; :
+" easy save
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>
+
+" remove the break line
+nnoremap J mzJ`z
+" keep the cursor centered when page down/up
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+" keep the cursor centered when searching next/prev
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
 " qt creator
 noremap gd :gotodec<CR>
 noremap gD :gotodef<CR>
@@ -35,17 +52,12 @@ noremap gr :gotorefs<CR>
 noremap <Space>lf :formatdoc<CR>
 noremap <Space>lr :rename<CR>
 noremap <Space>fw :findadv<CR>
-" noremap <Space>ff :findfiles<CR>
 noremap <Space>r :run<CR>
 noremap <Space>d :debug<CR>
-noremap <Space>h :nohls<CR>
 noremap <C-p> :findfiles<CR>
 inoremap <C-p> <ESC>:findfiles<CR>
 
 " MOVE LINE/BLOCK
-"nnoremap <C-S-J> :m+<CR>==
-"nnoremap <C-S-K> :m-2<CR>==
-"inoremap <C-S-J> <Esc>:m+<CR>==gi
-"inoremap <C-S-K> <Esc>:m-2<CR>==gi
-"vnoremap <C-S-J> :m'>+<CR>gv=gv
-"vnoremap <C-S-K> :m-2<CR>gv=gv
+vnoremap <J> :m'>+<CR>gv=gv
+vnoremap <K> :m-2<CR>gv=gv
+

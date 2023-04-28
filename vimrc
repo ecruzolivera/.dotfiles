@@ -127,8 +127,8 @@ nnoremap <C-s> :w<CR>
 inoremap <C-s> <ESC>:w<CR>
 
 " highlight move
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
+vnoremap <J> :m '>+1<CR>gv=gv
+vnoremap <K> :m '<-2<CR>gv=gv
 " remove the break line
 nnoremap J mzJ`z
 " keep the cursor centered when page down/up

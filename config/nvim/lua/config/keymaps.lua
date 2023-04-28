@@ -30,11 +30,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- keep the cursor centered when searching next/prev
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
--- sane paste, will keep the copy value instead of replace it with the deleted one
-vim.keymap.set("x", "p", [["_dP]])
--- sane delete, will keep the copy value instead of replace it with the deleted one
--- vim.keymap.set({ "n", "v" }, "d", [["_d]])
+
 if not vim.g.vscode then
+  -- sane paste, will keep the copy value instead of replace it with the deleted one
+  vim.keymap.set("x", "p", [["_dP]])
+  -- sane delete, will keep the copy value instead of replace it with the deleted one
+  -- vim.keymap.set({ "n", "v" }, "d", [["_d]])
   -- search outside vim
   vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
