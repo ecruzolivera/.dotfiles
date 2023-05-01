@@ -18,6 +18,9 @@ return {
   { "mg979/vim-visual-multi", tag = "v0.5.8" },
   -- syntax highlight
   "mtdl9/vim-log-highlighting",
+  "RRethy/vim-illuminate",
   "peterhoeg/vim-qml",
   "aklt/plantuml-syntax",
+  "tyru/open-browser.vim",
+  "weirongxu/plantuml-previewer.vim",
 }

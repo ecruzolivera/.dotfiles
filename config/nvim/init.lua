@@ -25,4 +25,6 @@ if not vim.g.vscode then
   require("config.lsp")
   require("config.null-ls")
   require("config.mason")
+  require("config.neo-tree")
+  require("config.editor")
 end
