@@ -21,10 +21,10 @@ require("lazy").setup("plugins")
 require("config.keymaps")
 
 if not vim.g.vscode then
-  require("config.config")
   require("config.lsp")
-  require("config.null-ls")
   require("config.mason")
+  require("config.misc")
   require("config.neo-tree")
-  require("config.editor")
+  require("config.null-ls")
+  require("config.vim")
 end
