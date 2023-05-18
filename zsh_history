@@ -11605,3 +11605,812 @@ nvim
 : 1672868660:0;code FMTRMR018100110_154234d2_reportSystemdLogs.log
 : 1672868740:0;e FMTRMR018100110_154234d2_reportSystemdLogs.log
 : 1672868889:0;exit
+: 1682966061:0;ls
+: 1682966066:0;cd nvim
+: 1682966067:0;ls
+: 1682966070:0;tree
+: 1682966072:0;yay tree
+: 1682966525:0;tree
+: 1682966533:0;e
+: 1682967301:0;cd .dotfiles/config/nvim
+: 1682967302:0;ls
+: 1682967303:0;e 
+: 1682967712:0;ls
+: 1682967714:0;git diff
+: 1682967722:0;lazygit
+: 1682967767:0;gitwm
+: 1682967774:0;gp
+: 1682967776:0;gl
+: 1682968265:0;ls
+: 1682968390:0;git checkout -b STUDIO-2556-lift-lock-refactor-lift-lock-pin-code-status-and-auto-lock
+: 1682968390:0;ls
+: 1682968519:0;e 
+: 1682981360:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1682981533:0;git diff
+: 1682981540:0;git reset --hard
+: 1682981551:0;gp
+: 1682967459:3;rcup -v
+: 1682981866:0;ls
+: 1682981877:0;e 
+: 1682982689:0;rcup -v
+: 1682982694:0;e
+: 1682984236:0;rcup -v
+: 1682984244:0;e
+: 1682985055:0;git switch master
+: 1682985056:0;gl
+: 1682985059:0;git checkout -b STUDIO-2581-disable-wifi-when-an-ethernet-connection-is-detected
+: 1683001501:0;tree
+: 1683001518:0;ls lua/config
+: 1683001555:0;rm lua/config/config.lua
+: 1683001570:0;rm lua/plugins/bufferline.lua
+: 1683001573:0;tree
+: 1683002243:0;e
+: 1683002329:0;ls
+: 1683002338:0;tree
+: 1683002349:0;rm lua/plugins/buffers.lua
+: 1682984479:0;rm -rf .local/share/nvim
+: 1683002380:0;e
+: 1683002715:0;ls
+: 1683002720:0;aunpack LazyVim-main.zip
+: 1683002721:0;ls
+: 1683002724:0;e LazyVim-main
+: 1683002839:0;e
+: 1683003232:0;ls
+: 1683003489:0;e
+: 1683003536:7;git diff
+: 1683003545:0;lazygit
+: 1683003592:0;e
+: 1683004156:0;cd
+: 1683004157:0;ls
+: 1683004173:0;rm -rf .config/nvim/
+: 1683004183:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1683004189:0;rm -rf ~/.config/nvim/.git
+: 1683004196:0;ls
+: 1683004205:0;cd Projects
+: 1683004205:0;ls
+: 1683004214:0;de Personal/vending-machine-collection
+: 1683004224:0;cd Personal/vending-machine-collection/vending_machine_qml
+: 1683004226:0;e
+: 1683004502:0;ls
+: 1683004505:0;cd
+: 1683004506:0;ls
+: 1683004521:0;tmux kill-server
+: 1683002363:3;rcup -v
+: 1683004522:0;tmux-sessionizer
+: 1683004534:0;rm -rf ~/.config/nvim/.git
+: 1683004535:0;ls
+: 1683004556:0;tmux-sessionizer
+: 1683004561:0;ls
+: 1683004564:0;cd
+: 1683004568:0;rcup -v
+: 1683004589:0;rm -rf .config/nvim
+: 1683004590:0;ls
+: 1683004606:0;rm -rf .local/share/nvim
+: 1683004614:0;rm -rf .local/state/nvim
+: 1683004615:0;ls
+: 1683004622:0;e
+: 1683004633:0;rcup -v
+: 1683005073:0;ls
+: 1683005086:0;e .dotfiles/config/nvim
+: 1683005739:0;e
+: 1683005762:0;cd .dotfiles/config/nvim
+: 1683005763:0;e
+: 1683006122:0;k
+: 1683006124:0;e
+: 1683041077:0;tmux kill-server
+: 1683041077:0;tmux-sessionizer
+: 1683041082:0;ls
+: 1683041096:0;cd config/nvim
+: 1683041097:0;ls
+: 1683041098:0;e
+: 1683041708:0;cd
+: 1683041708:0;ls
+: 1683041733:0;e
+: 1683041776:0;rm -rf ~/.config/nvim \
+rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim\
+rm -rf ~/.cache/nvim \
+
+: 1683041785:0;git clone https://github.com/LazyVim/starter ~/.config/nvim
+: 1683041792:0;rm -rf ~/.config/nvim/.git
+: 1683041809:0;e .config/nvim
+: 1683041974:0;cd .config/nvim
+: 1683041975:0;ls
+: 1683041978:0;e
+: 1683042572:0;ls
+: 1683042584:0;cd config/nvim
+: 1683042584:0;ls
+: 1683042586:0;e
+: 1683048482:0;ls
+: 1683048490:0;cd vending_machine_qml
+: 1683048491:0;e
+: 1683051703:0;ls
+: 1683051716:0;./deployment/build.sh  --clean
+: 1683051724:0;rm -rf build-release
+: 1683051728:0;sudo rm -rf build-release
+: 1683051735:0;./deployment/build.sh  --clean
+: 1683051823:0;ls
+: 1683052036:0;git diff
+: 1683052050:0;ls
+: 1683052116:0;scp snaps_studio_master_interactive-strength-studio_2.14.0_amd64.snap ecos_studio:~
+: 1683053617:0;ssh ecos_studio
+: 1683053688:0;scp build-release/dist/opt/app/bin/app  ecos_studio:~/
+: 1683053818:0;ssh ecos_studio
+: 1683053985:0;scp ecos_studio:~/logs.log .
+: 1683053989:0;e logs.log
+: 1683054803:0;ls
+: 1683054815:0;open Alchemy\ -\ ShadowDark.pdf
+: 1683054990:0;ls
+: 1683055010:0;unsquashfs snaps_studio_master_interactive-strength-studio_2.14.0_amd64.snap
+: 1683055035:0;ls
+: 1683055038:0;de squashfs-root
+: 1683055040:0;cd squashfs-root
+: 1683055040:0;ls
+: 1683055046:0;fd Qt
+: 1683055056:0;ls
+: 1683055063:0;fd Concurrent
+: 1683055066:0;ls
+: 1683055084:0;fd Qt.*.C
+: 1683055091:0;cd
+: 1683055094:0;cd Downloads
+: 1683055095:0;ls
+: 1683055183:0;rm -rf squashfs-root
+: 1683055192:0;unsquashfs snaps_studio_master_interactive-strength-studio_2.13.0_amd64.snap
+: 1683055197:0;cd squashfs-root
+: 1683055199:0;fd Qt.*.C
+: 1683055214:0;fd conc
+: 1683055224:0;e logs.log
+: 1683055398:0;ssh ecos_studio
+: 1683058704:0;ssh forme@192.168.1.80
+: 1683058864:0;cd
+: 1683058868:0;cd Downloads
+: 1683058870:0;scp ecos_studio:~/logs.log .
+: 1683058887:0;ls
+: 1683058888:0;cd
+: 1683058895:0;e .ssh/config
+: 1683058912:0;cd Downloads
+: 1683058914:0;ls
+: 1683058915:0;scp ecos_studio:~/logs.log .
+: 1683058919:0;e logs.log
+: 1683059005:81;./deployment/build.sh  --clean
+: 1683059115:0;scp build-release/dist/opt/app/bin/app  ecos_studio:~/
+: 1683059388:3;ssh forme@192.168.1.80
+: 1683059394:0;ssh ecos_studio
+: 1683059464:2;scp ecos_studio:~/logs.log .
+: 1683059468:0;e logs.log
+: 1683059678:0;ls
+: 1683059687:0;e
+: 1683059801:0;hf docker
+: 1683059832:0;docker ls
+: 1683059838:0;docker images
+: 1683059870:36;e 
+: 1683059926:0;docker images
+: 1683059950:0;./deployment/create-appimage-by-docker.sh ui-builder20-qt5.15.1 
+: 1683059987:0;ls
+: 1683059989:0;gl
+: 1683059995:0;cd studio
+: 1683059995:0;ls
+: 1683059999:0;cd files
+: 1683059999:0;ls
+: 1683060008:0;..
+: 1683060013:0;fd appimage
+: 1683060014:0;ls
+: 1683060019:0;cat download.sh
+: 1683060028:0;cd files/scripts
+: 1683060029:0;ls
+: 1683060035:0;..
+: 1683060036:0;ls
+: 1683060037:0;..
+: 1683060039:0;ls
+: 1683060041:0;./download.sh
+: 1683060321:0;ls
+: 1683060326:0;cat snap
+: 1683060328:0;ls snap
+: 1683060333:0;snapcraft  --debug
+: 1683060576:0;ls
+: 1683060581:0;snapcraft clean
+: 1683060588:0;snapcraft
+: 1683061193:0;ls
+: 1683061197:0;cd build-release
+: 1683061200:0;fd concurrent
+: 1683061209:0;..
+: 1683061209:0;ls
+: 1683061215:0;e
+: 1683061234:0;ls
+: 1683061242:0;git stash
+: 1683061245:0;git switch master
+: 1683061246:0;gl
+: 1683061274:0;git switch -c adding-concurrent-to-the-appimage
+: 1683061277:0;e
+: 1683061312:0;nmcli radio wifi
+: 1683061315:0;nmcli radio wifi on
+: 1683061326:0;nmcli
+: 1683061370:0;nmcli device show
+: 1683061440:0;journalctl -n 1000 -u NetworkManager -u wpa_supplicant\
+
+: 1683061604:0;ls
+: 1683061647:0;cp ~/Projects/Forme/station-ui/build-release/artifact/ui.appimage files/scripts/
+: 1683061650:0;ls files/scripts
+: 1683061665:0;snapcraft
+: 1683062967:0;ls
+: 1683062980:0;scp interactive-strength-studio_2.14.0_amd64.snap ecos_studio:~/
+: 1683063062:0;ls
+: 1683063170:0;ssh ecos_studio
+: 1683059131:0;ls
+: 1683063337:0;ls
+: 1683063342:0;e logs.log
+: 1683063479:0;cp ~/Projects/Forme/station-ui/build-release/artifact/ui.appimage files/scripts/
+: 1683063486:0;ls files/scripts
+: 1683063498:0;cd files/scripts
+: 1683063499:0;ls
+: 1683063510:0;aunpack ui.appimage
+: 1683063512:0;ls
+: 1683063566:0;./ui.appimage --appimage-extract
+: 1683063569:0;ls
+: 1683063574:0;cd squashfs-root
+: 1683063574:0;ls
+: 1683063591:0;find ./ -iname libqt5c*
+: 1683063596:0;rm -rf squashfs-root
+: 1683063599:0;..
+: 1683063602:0;ls
+: 1683063604:0;..
+: 1683063605:0;ls
+: 1683063608:0;rm interactive-strength-studio_2.14.0_amd64.snap
+: 1683063613:0;snapcraft clean app-ui
+: 1683063651:0;snapcraft
+: 1683063788:0;snapcraft --debug
+: 1683064112:0;ls
+: 1683063433:25;./deployment/create-appimage-by-docker.sh ui-builder20-qt5.15.1 
+: 1683064119:0;git switch master
+: 1683064122:0;gl
+: 1683064128:0;lazygit
+: 1683064143:0;git merge master
+: 1683064153:0;git stash pop
+: 1683064156:0;git diff
+: 1683064285:0;nmcli radio wifi on
+: 1683064291:0;nmcli 
+: 1683064305:0;nmcli connection show
+: 1683064347:0;lazygit
+: 1683065042:0;ls
+: 1683065049:0;git diff
+: 1683065087:0;./deployment/create-appimage-by-docker.sh ui-builder20-qt5.15.1 
+: 1683065032:0;ls
+: 1683065132:0;cp ~/Projects/Forme/station-ui/build-release/artifact/ui.appimage files/scripts/
+: 1683065135:0;ls
+: 1683065143:0;snapcraft --debug
+: 1683065640:0;ls
+: 1683065641:0;git diff
+: 1683065650:0;ls
+: 1683065655:0;cat rebuild.sh
+: 1683065664:0;ls
+: 1683065678:0;cat photorec.se2
+: 1683065811:0;ls
+: 1683065813:0;scp interactive-strength-studio_2.14.0_amd64.snap ecos_studio:~/
+: 1683066047:0;ssh ecos_studio
+: 1683066091:2;scp ecos_studio:~/logs.log .
+: 1683066097:0;e logs.log
+: 1683066682:0;ls
+: 1683066686:0;rm interactive-strength-studio_2.14.0_amd64.snap
+: 1683066691:0;cat download.sh
+: 1683066711:0;./download.sh STUDIO-2581-disable-wifi-when-an-ethernet-connection-is-detected
+: 1683066922:0;ls
+: 1683066928:0;snapcraft --debug
+: 1683067289:0;ls
+: 1683067292:0;scp interactive-strength-studio_2.14.0_amd64.snap ecos_studio:~/
+: 1683067704:0;ls
+: 1683067719:0;rm snaps_studio_master_interactive-strength-studio_2.1*
+: 1683067720:0;ls
+: 1683067730:0;rm -rf squashfs-root
+: 1683067731:0;ls
+: 1683067858:0;ssh ecos_studio
+: 1683067881:3;ping 192.168.1.80
+: 1683067977:0;ls
+: 1683067517:398;ssh ecos_studio
+: 1683067981:0;ssh ecos_studio
+: 1683066521:132;lazygit
+: 1683068155:9;git diff
+: 1683068277:0;git reset --hard
+: 1683068278:0;gp
+: 1683068084:0;ls
+: 1683072218:0;which gm
+: 1683072233:0;gitwm
+: 1683072235:0;gl
+: 1683072408:0;lazygit
+: 1683072681:0;git diff
+: 1683072711:0;git switch -c fixing/music-buttons-position
+: 1683072712:0;git diff
+: 1683072723:0;lazygit
+: 1683075617:0;cd 5.15.2
+: 1683075617:0;ls
+: 1683075623:0;cd gcc_64
+: 1683075624:0;ls
+: 1683075627:0;fd concurrent
+: 1683075647:0;ls lib/libQt5Concurrent.*
+: 1683075670:0;ls
+: 1683072147:176;ssh ecos_studio
+: 1683075811:0;unsquashfs snaps_studio_master_interactive-strength-studio_2.14.0_amd64.snap
+: 1683075814:0;ls
+: 1683075826:0;cd squashfs-root
+: 1683075827:0;ls
+: 1683075830:0;fd concurrent
+: 1683075841:0;ls usr/lib/x86_64-linux-gnu
+: 1683075860:0;ls | grep -i libqt
+: 1683075870:0;ls | grep -i qt
+: 1683075871:0;ls
+: 1683075885:0;cd usr/lib/x86_64-linux-gnu
+: 1683075885:0;ls
+: 1683075889:0;ls | grep -i qt
+: 1683075927:0;df -h
+: 1683075942:0;du
+: 1683075949:0;du -h
+: 1683076036:0;..
+: 1683076044:0;man du
+: 1683076091:0;du -hs
+: 1683076163:0;fd concurrent
+: 1683076184:0;ls usr/lib/x86_64-linux-gnu/libQt5Concurrent.so
+: 1683076191:0;ls usr/lib/x86_64-linux-gnu/libQt5Concurrent.so*
+: 1683076279:0;gdu
+: 1683093718:0;ls
+: 1683093732:0;cd dcc-portraits.ppk_FILES
+: 1683093734:0;ls
+: 1683093741:0;fd xml
+: 1683093918:0;ls
+: 1683093924:0;tmux-sessionizer
+: 1683093927:0;ls
+: 1683093945:0;cd .smiteworks/fgdata/portraits
+: 1683093946:0;ls
+: 1683093960:0;aunpack dcc-tokens.mod
+: 1683093972:0;mv dcc-tokens.mod dcc-tokens.zip
+: 1683093980:0;aunpack dcc-tokens.zip
+: 1683093982:0;ls
+: 1683093985:0;cd dcc-tokens
+: 1683093985:0;ls
+: 1683093990:0;e definition.xml
+: 1683096284:0;mogrify --help
+: 1683096289:0;ls
+: 1683096292:0;cd fgdata
+: 1683096292:0;ls
+: 1683096295:0;cd portraits
+: 1683096295:0;ls
+: 1683096298:0;cd wfrp
+: 1683096299:0;ls
+: 1683096335:0;find . -name "*.png" | xargs mogrify -resize 50%
+: 1683096343:0;btm
+: 1683096706:0;ls
+: 1683096717:0;ranger
+: 1683096788:0;ls
+: 1683096797:0;du -h
+: 1683096799:0;ls
+: 1683096949:0;maick morify -resize 50%  *.png\
+
+: 1683096984:0;magick  mogrify -resize 50%  *.png\
+
+: 1683097257:0;ls
+: 1683097261:0;du -h
+: 1683097262:0;ls
+: 1683097271:0;ranger
+: 1683130346:0;tmux kill-server
+: 1683131204:0;tmux-sessionizer
+: 1683131207:0;ls
+: 1683131219:0;cd
+: 1683131225:0;e .zshrc
+: 1683131390:0;tmux kill-server
+: 1683131391:0;tmux-sessionizer
+: 1683131396:0;gsm
+: 1683131397:0;ls
+: 1683131398:0;gl
+: 1683132959:0;e
+: 1683133340:0;ls
+: 1683133349:0;lazygit
+: 1683133880:0;ls
+: 1683134147:0;ls squashfs-root
+: 1683134151:0;fd concurrent
+: 1683134183:0;ssh ecos_studio
+: 1683140986:0;ls
+: 1683147525:0;rm -rf squashfs-root
+: 1683147649:0;ls
+: 1683147663:0;mkdir snap
+: 1683147668:0;mv zj3sGxYaZpg9W144trLEOXh2gWodi8Vg_3451.snap snap
+: 1683147671:0;cd snap
+: 1683147682:0;mv zj3sGxYaZpg9W144trLEOXh2gWodi8Vg_3451.snap studio3451.snap
+: 1683147684:0;ls
+: 1683147801:0;ssh ecos_studio
+: 1683149696:0;e
+: 1683151606:0;ls
+: 1683151610:0;ls ..
+: 1683151638:0;mv ../zj3sGxYaZpg9W144trLEOXh2gWodi8Vg_3450.snap studio3450.snap
+: 1683151639:0;ls
+: 1683151660:0;unsquashfs studio3450.snap
+: 1683151665:0;ls
+: 1683151686:0;mv squashfs-root squashfs-root_3450
+: 1683151687:0;ls
+: 1683151696:0;unsquashfs studio3451.snap
+: 1683151700:0;ls
+: 1683151705:0;mv squashfs-root squashfs-root_3451
+: 1683151706:0;ls
+: 1683151776:0;diff -qr squashfs-root_3450 squashfs-root_3451
+: 1683151799:0;yay meld
+: 1683151818:0;meld --help
+: 1683151832:0;meld squashfs-root_3450 squashfs-root_3451
+: 1683152117:0;ls
+: 1683152122:0;du -h
+: 1683152129:0;gdu
+: 1683155692:0;lazygit
+: 1683156411:0;e
+: 1683160067:0;lazygit
+: 1683160870:0;e
+: 1683180125:0;ls .smiteworks
+: 1683180125:0;ls
+: 1683180133:0;cd .smiteworks/fgdata/portraits
+: 1683180134:0;ls
+: 1683180137:0;cd wfrp
+: 1683180159:0;open advisor.png
+: 1683180366:0;ristretto advisor.png
+: 1683180384:0;gimp advisor.png
+: 1683180418:0;ls
+: 1683180421:0;ls a*
+: 1683180479:0;rm advisor.j*
+: 1683180481:0;ls
+: 1683180485:0;parallel --help
+: 1683180638:6;parallel magick mogrify -format jpg  *.png\
+
+: 1683180708:0;man parralel_tutorial
+: 1683180714:0;man paralel_tutorial
+: 1683180721:0;man parallel_tutorial
+: 1683180839:0;parallel magick mogrify -format jpg ::: *.png\
+
+: 1683180884:4;parallel magick mogrify -resize 50% ::: *.png\
+
+: 1683180889:0;ls
+: 1683180905:0;cd ..
+: 1683180906:0;ls
+: 1683180910:0;rm -rf wfrp
+: 1683180918:0;aunpack wfrp.zip
+: 1683180919:0;ls
+: 1683180941:0;cd wfrp
+: 1683180941:0;ls
+: 1683180957:0;parallel magick mogrify -format jpg ::: *.png\
+
+: 1683180961:0;ls
+: 1683180973:0;ristretto advisor.png
+: 1683181314:0;ls
+: 1683181332:0;rm *.jpg
+: 1683181333:0;ls
+: 1683181510:0;magick  mogrify -format jpg -background white -flatten -alpha off advisor.png\
+
+: 1683181511:0;ls
+: 1683181612:0;magick  mogrify -format jpg -background white -flatten advisor.png\
+
+: 1683181666:0;parallel magick  mogrify -format jpg -background white -flatten ::: *.png\
+
+: 1683181889:0;ls
+: 1683181896:0;rm *.jpg
+: 1683181897:0;ls
+: 1683181905:0;ristretto advisor.png
+: 1683181978:0;ls
+: 1683182045:0;parallel magick mogrify -resize 100x100 ::: *.png\
+
+: 1683182050:0;ls
+: 1683182062:0;ristretto advisor.png
+: 1683182098:0;du -h
+: 1683182104:0;ls
+: 1683182108:0;atool --help
+: 1683182121:0;apack --help
+: 1683182313:0;apack wfrp.zip *.png
+: 1683182315:0;ls
+: 1683182325:0;mv wfrp.zip ..
+: 1683182328:0;cd ..
+: 1683182328:0;ls
+: 1683182336:0;mv wfrp.zip wfrp.ppk
+: 1683182338:0;ls
+: 1683182342:0;rm -rf wfrp
+: 1683182344:0;ls
+: 1683216726:0;tmux kill-server
+: 1683181308:0;ls
+: 1683216733:0;cd Downloads
+: 1683216733:0;ls
+: 1683216867:0;aunpack worldographer-amd64-deb.zip
+: 1683216869:0;ls
+: 1683216880:0;yay worldographer
+: 1683216888:0;yay hexographer
+: 1683217056:0;yay debtap
+: 1683217074:0;ls
+: 1683217106:0;mkdir worldographer
+: 1683217125:0;mv worldographer_1.66.17_amd64.deb worldographer
+: 1683217128:0;cd worldographer
+: 1683217128:0;ls
+: 1683217291:0;cd ..
+: 1683217292:0;ls
+: 1683217460:0;aunpack Worldographer.zip
+: 1683217462:0;ls
+: 1683217502:0;java -jar Worldographer-1.66.jar
+: 1683217557:0;ls
+: 1683217560:0;cd worldographer
+: 1683217560:0;ls
+: 1683217567:0;debtap
+: 1683217572:0;debtap worldographer_1.66.17_amd64.deb
+: 1683217582:0;sudo debtap -u
+: 1683217724:0;ls
+: 1683217731:0;debtap worldographer_1.66.17_amd64.deb
+: 1683218337:0;ls
+: 1683218492:0;aunpack worldographer-1.66.17-1-x86_64.pkg.tar.zst
+: 1683218494:0;ls
+: 1683218510:0;cd
+: 1683218511:0;ls
+: 1683218513:0;cd Downloads
+: 1683218513:0;ls
+: 1683220787:0;tmux-sessionizer
+: 1683220789:0;ls
+: 1683220793:0;gsm
+: 1683220794:0;gl
+: 1683221687:0;git checkout -b STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683221688:0;ls
+: 1683221800:0;btm
+: 1683230244:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1683230278:0;hf 8000
+: 1683230291:0;btm
+: 1683230477:0;netstat -na
+: 1683230488:0;netstat -na | grep -i listen
+: 1683230508:0;netstat -na | grep -iw listen
+: 1683230587:0;lsof -i :1313\
+
+: 1683230591:0;lsof -i :8000\
+
+: 1683230656:0;btm
+: 1683230672:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1683231664:0;ls
+: 1683231665:0;git diff
+: 1683231676:0;lazygit
+: 1683236729:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1683236777:0;lazygit
+: 1683236841:0;gsm
+: 1683236843:0;gl
+: 1683236855:0;which gcb
+: 1683236888:0;gcb remove-libConcurrent
+: 1683236892:0;e
+: 1683239112:0;gsm
+: 1683239114:0;gl
+: 1683239239:0;ssh ecos_studio
+: 1683240275:0;which lld
+: 1683240598:0;ls
+: 1683240610:0;cd build-release/dist/opt/app/bin
+: 1683240611:0;ls
+: 1683240613:0;lld app
+: 1683240622:0;ld.lld app
+: 1683240638:0;objdump app
+: 1683240650:0;objdump -p app
+: 1683240658:0;objdump -p app | grep -i need
+: 1683240686:0;e
+: 1683240790:0;git dif
+: 1683240801:0;git diff
+: 1683240837:0;git checkout -b STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683240859:0;git branch -D STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683240861:0;git checkout -b STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683240866:0;lazygit
+: 1683241150:0;cd ..
+: 1683241152:0;cd
+: 1683241167:0;cd Projects/Forme/
+: 1683241168:0;ls
+: 1683241172:0;cd build-station-ui-Desktop_Qt_5_15_2_GCC_64bit-Debug
+: 1683241172:0;ls
+: 1683241177:0;cd app
+: 1683241178:0;ls
+: 1683241182:0;objdump -p app | grep -i need
+: 1683241211:0;ls
+: 1683241216:0;gsm
+: 1683241218:0;gl
+: 1683242956:0;cd ..
+: 1683242956:0;ls
+: 1683242958:0;cd ..
+: 1683242959:0;ls
+: 1683242961:0;cd station-ui
+: 1683242961:0;ls
+: 1683242963:0;git diff
+: 1683242985:0;gcb restoring-qtconcurrent
+: 1683242990:0;la
+: 1683242994:0;lazygit
+: 1683243614:0;gsm
+: 1683243615:0;gl
+: 1683243620:0;ls
+: 1683243625:0;git checkout -b STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683243632:0;git branch -D STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683243634:0;git checkout -b STUDIO-2586-add-2-icons-in-cps-one-for-spotify-and-one-for-amazon-music-that-opens-web-view
+: 1683304249:0;ls
+: 1683304258:0;aunpack FMTRMRP16100432_ed758d4e_reportSystemdLogs.log.gz
+: 1683304261:0;ls
+: 1683304296:0;e FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683304375:0;ls
+: 1683304384:0;sed -i '/systemd/d;/mir-/d;/audit/d;/pulseaudio/d;/kernel/d;/networkmanager/d;/NetworkManager/d;/wpa_supplicant/d;' FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683304392:0;ls
+: 1683304404:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683304486:0;ls
+: 1683304490:0;e FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683304731:0;ls
+: 1683304735:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683305214:0;ls
+: 1683305231:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683305237:0;cd
+: 1683305239:0;e .vimrc
+: 1683305303:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683305695:0;ls
+: 1683305713:0;mv FMTRMRP16100432_ed758d4e_reportSystemdLogs_clean.log
+: 1683305727:0;mv FMTRMRP16100432_ed758d4e_reportSystemdLogs.log FMTRMRP16100432_ed758d4e_reportSystemdLogs_clean.log
+: 1683305728:0;ls
+: 1683305736:0;aunpack FMTRMRP16100432_ed758d4e_reportSystemdLogs.log.gz
+: 1683305740:0;ls
+: 1683305751:0;sed -i '/systemd/d;/mir-/d;/audit/d;/pulseaudio/d;/kernel/d;/networkmanager/d;/NetworkManager/d;/wpa_supplicant/d;' FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683305766:0;e FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683306049:0;cd Downloads
+: 1683306050:0;ls
+: 1683306057:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683306298:0;ls
+: 1683306307:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683306957:0;ls
+: 1683306961:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs.log
+: 1683307535:0;ls
+: 1683307557:0;e FMTRMRP16100432_ed758d4e_reportSystemdLogs_clean.log
+: 1683307589:0;vim FMTRMRP16100432_ed758d4e_reportSystemdLogs_clean.log
+: 1683325088:0;lazygit
+: 1683354149:0;cd TTRPG
+: 1683354150:0;gdu
+: 1683403079:0;tmux kill-server
+: 1683403081:0;yay
+: 1683406850:0;ls
+: 1683406862:0;cd Projects/Personal
+: 1683406863:0;ls
+: 1683406874:0;rm -rf codemirror-extension-inline-suggestion obsidian-companion tmux-sessionizer
+: 1683406875:0;ls
+: 1683406878:0;cd vending-machine-collection
+: 1683406880:0;ls
+: 1683406887:0;cd vending_machine_iced_rs
+: 1683406888:0;ls
+: 1683406893:0;e 
+: 1683407187:0;tmux-sessionizer
+: 1683407203:0;cd nvim
+: 1683407204:0;ls
+: 1683407228:0;e
+: 1683407736:0;tmux-sessionizer
+: 1683407741:0;ls
+: 1683407745:0;cd vending_machine_iced_rs
+: 1683407746:0;e
+: 1683412296:0;ls
+: 1683412306:0;e
+: 1683412322:0;ls
+: 1683412325:0;cd ..
+: 1683412328:0;ls nvim*
+: 1683412331:0;ls 
+: 1683412341:0;ls -al nvim
+: 1683412350:0;mv ~/.config/nvim ~/.config/nvim.bak
+: 1683412357:0;mv ~/.local/share/nvim ~/.local/share/nvim.bak\
+mv ~/.local/state/nvim ~/.local/state/nvim.bak\
+mv ~/.cache/nvim ~/.cache/nvim.bak
+: 1683412365:0;git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim\
+nvim
+: 1683412580:0;ls
+: 1683412590:0;rm -rf nvim
+: 1683412591:0;cd
+: 1683412597:0;ls .local/share
+: 1683412599:0;cd nvim
+: 1683412599:0;ls
+: 1683412616:0;cd nvim
+: 1683412617:0;ls
+: 1683412625:0;cd .local/share
+: 1683412626:0;ls
+: 1683412628:0;rm nvim
+: 1683412631:0;cd 
+: 1683412638:0;cd .local/state
+: 1683412656:0;cd
+: 1683412683:0;rm -rf ~/.local/share/nvim \
+mv -rf ~/.local/state/nvim \
+mv -rf ~/.cache/nvim 
+: 1683412693:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim 
+: 1683412705:0;nvim
+: 1683412722:0;git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim\
+nvim
+: 1683412748:0;nvim
+: 1683412758:0;cd .config/ls
+: 1683412762:0;cd .config
+: 1683412764:0;cd astronvim
+: 1683412764:0;ls
+: 1683412766:0;e
+: 1683412842:0;ls
+: 1683412844:0;cd ..
+: 1683412846:0;ls astronvim
+: 1683412849:0;ls astronvim -al
+: 1683412861:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim 
+: 1683412863:0;ls
+: 1683412866:0;cd
+: 1683412878:0;cd .dotfiles/config/nvim
+: 1683412879:0;ls
+: 1683412884:0;e
+: 1683412908:0;cd
+: 1683412913:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim 
+: 1683412925:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim \
+rm -rf ~/.config/nvim
+: 1683412931:0;cd .dotfiles/config/nvim
+: 1683412936:0;rcup -v
+: 1683413638:0;ls
+: 1683413638:0;e
+: 1683413656:0;ls
+: 1683413659:0;e
+: 1683414964:0;cd nvim
+: 1683414965:0;ls
+: 1683414966:0;ls -al
+: 1683414968:0;tree
+: 1683414982:0;rm lua/config/null-ls.lua
+: 1683414982:0;ls
+: 1683416805:0;tree
+: 1683416810:0;rcup -v
+: 1683416816:0;ls
+: 1683416817:0;tree
+: 1683416825:0;ls
+: 1683416826:0;e
+: 1683419149:15;yay lldb
+: 1683420613:0;ls
+: 1683420703:0;yay lldb
+: 1683489186:0;e
+: 1683491020:0;ls
+: 1683491023:0;yay chafa
+: 1683503113:0;ls
+: 1683503118:0;e
+: 1683517697:0;rcup -v
+: 1683517795:0;e
+: 1683518154:0;code .
+: 1683519403:0;btm
+: 1683519624:0;e
+: 1683519753:0;cargo run
+: 1683519758:0;cd vending_machine_iced_rs
+: 1683519760:0;cargo run
+: 1683519861:1;tmux-sessionizer
+: 1683519864:0;ls
+: 1683519866:0;tmux-sessionizer
+: 1683519874:0;ls
+: 1683519880:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim \
+rm -rf ~/.config/nvim
+: 1683519888:0;git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
+: 1683520045:0;cd nvim
+: 1683520045:0;ls
+: 1683520051:0;e 
+: 1683520298:0;e
+: 1683520323:0;e lua/config/keymaps.lua
+: 1683520637:0;cd ..
+: 1683520638:0;ls
+: 1683520642:0;rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim \
+rm -rf ~/.config/nvim
+: 1683520656:0;git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim\
+nvim
+: 1683520125:601;e
+: 1683520727:0;e
+: 1683521419:0;ls
+: 1683521424:0;cd astronvim
+: 1683521425:0;ls
+: 1683521426:0;e
+: 1683521583:0;ls
+: 1683521829:0;e
+: 1683522701:0;ls
+: 1683523635:0;e
+: 1683561618:0;ls
+: 1683561629:0;gsm
+: 1683561630:0;gl
+: 1683561639:0;ls
+: 1683561967:0;git checkout -b STUDIO-2596-add-virtual-keyboard-to-webview
+: 1683561968:0;ls
+: 1683562999:0;gl
+: 1683563002:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1683563008:0;btm
+: 1683563025:0;source etc/develop.env && go run ./cmd/main/*.go
+: 1683563097:0;e
+: 1683563272:0;ls
+: 1683563295:0;ls ../build-station-ui-Desktop_Qt_5_15_2_GCC_64bit-Debug

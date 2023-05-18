@@ -41,7 +41,7 @@ return {
       -- Useful status updates for LSP
       -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
       -- Standalone UI for nvim-lsp progress. Eye candy for the impatient.
-      { "j-hui/fidget.nvim", opts = {} },
+      { "j-hui/fidget.nvim",       opts = {} },
 
       -- Additional lua configuration, makes nvim stuff amazing!
       "folke/neodev.nvim",
@@ -57,5 +57,8 @@ return {
       "hrsh7th/cmp-nvim-lsp-signature-help",
       "hrsh7th/cmp-buffer",
     },
+  },
+  {
+    "simrat39/rust-tools.nvim",
   },
 }

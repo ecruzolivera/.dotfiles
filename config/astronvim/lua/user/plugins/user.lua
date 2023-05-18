@@ -22,7 +22,7 @@ return {
     event = "User AstroGitFile",
   },
   {
-    "ray-x/lsp_signature.nvim",
-    event = "User AstroFile",
+    -- "ray-x/lsp_signature.nvim",
+    -- event = "User AstroFile",
   },
 }

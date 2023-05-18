@@ -23,8 +23,8 @@ require("config.keymaps")
 if not vim.g.vscode then
   require("config.mason")
   require("config.lsp")
-  require("config.null-ls")
   require("config.vim")
   require("config.misc")
   require("config.neo-tree")
+  require("config.dap")
 end

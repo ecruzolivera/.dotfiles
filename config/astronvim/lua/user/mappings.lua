@@ -23,10 +23,37 @@ return {
     -- quick save
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
     [";"] = { ":", desc = "Easy colon" },
-    ["<C+p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
+    ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
+    -- highlight move
+    ["<A-j>"] = { "<cmd>m .+1<cr>==", desc = "Move down" },
+    ["<A-k>"] = { "<cmd>m .-2<cr>==", desc = "Move up" },
+    -- remove the break line
+    -- ["J"] = { "zJ`z" },
+    -- keep the cursor centered when page down/up
+    -- ["<C-d>"] = { "<-d>zz" },
+    -- ["<C-u>"] = { "<-u>zz" },
+    -- keep the cursor centered when searching next/prev
+    -- ["n"] = { "zzzv" },
+    -- ["N"] = { "zzzv" },
+    -- git
+    ["<leader>gs"] = { "<cmd>Git<CR>", desc = "Git Status" },
+    ["<leader>gp"] = { "<cmd>Git push<CR>", desc = "Git Push" },
+    ["<leader>gP"] = { "<cmd>Git pull<CR>", desc = "Git Pull" },
+    ["<leader>gb"] = { "<cmd>Git blame<CR>", desc = "Git Blame" },
+    ["<leader>gd"] = { "<cmd>Git diff<CR>", desc = "Git Diff" },
+    ["<leader>gl"] = { "<cmd>Git log<CR>", desc = "Git Diff" },
+    -- Undo tree
+    ["<leader>u"] = { "<cmd>UndotreeToggle<CR>", desc = "UndotreeToggle" },
   },
   i = {
     ["<C-s>"] = { "<ESC>:w!<cr>", desc = "Save File" },
+    ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
+    ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move down" },
+    ["<A-k>"] = { "<esc><cmd>m .-2<cr>==gi", desc = "Move up" },
+  },
+  v = {
+    ["<A-j>"] = { ":m '>+1<cr>gv=gv", desc = "Move down" },
+    ["<A-k>"] = { ":m '<-2<cr>gv=gv", desc = "Move up" },
   },
   t = {
     -- setting a mapping to false will disable it

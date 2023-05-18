@@ -128,9 +128,9 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gitbd="git branch | grep -v "master" | xargs git branch -D"
-alias gitwm="git switch master"
-alias gitcw="git -c switch"
+alias gbd="git branch | grep -v "master" | xargs git branch -D"
+alias gsm="git switch master"
+alias gcw="git -c switch"
 
 alias ls="exa -l --group-directories-first"
 alias cat=bat
@@ -153,43 +153,14 @@ export SNAPCRAFT_BUILD_ENVIRONMENT_MEMORY=16G
 # other 
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# Bash Function To Extract File Archives Of Various Types
-extract() {
-    if [ -f $1 ]; then
-        case $1 in
-          *.tar.bz2)   tar xjf $1   ;;
-          *.tar.gz)    tar xzf $1   ;;
-          *.bz2)       bunzip2 $1   ;;
-          *.rar)       unrar x $1   ;;
-          *.gz)        gunzip -k $1    ;;
-          *.tar)       tar xf $1    ;;
-          *.tbz2)      tar xjf $1   ;;
-          *.tgz)       tar xzf $1   ;;
-          *.zip)       unzip $1     ;;
-          *.Z)         uncompress $1;;
-          *.7z)        7z x $1      ;;
-          *.deb)       ar x $1      ;;
-          *.tar.xz)    tar xf $1    ;;
-          *.tar.zst)   tar xf $1    ;;
-          *) echo "'$1' cannot be extracted via extract()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
-}
-
 # Source things
 [ -f ~/.cargo/env ] && source ~/.cargo/env
+
+# rtx environment
 eval "$(rtx activate zsh)"
 
 # fzf shortcuts
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# vi mode
-set -o vi
-
-bindkey -s ^f "tmux-sessionizer\n"
-
 
 # pnpm
 export PNPM_HOME="/home/ernesto/.local/share/pnpm"
@@ -198,3 +169,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# vi mode
+set -o vi
+
+bindkey -s ^f "tmux-sessionizer\n"
+

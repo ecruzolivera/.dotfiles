@@ -90,7 +90,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'mtdl9/vim-log-highlighting'
     Plug 'peterhoeg/vim-qml'
     Plug 'bkad/camelcasemotion'
-    Plug 'mg979/vim-visual-multi {'branch': 'master'}
+    Plug 'mg979/vim-visual-multi'
     Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-surround'

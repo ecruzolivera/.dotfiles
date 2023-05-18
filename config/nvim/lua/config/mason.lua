@@ -15,6 +15,9 @@ require("mason-tool-installer").setup({
   ensure_installed = {
     -- you can turn off/on auto_update per tool
     "bash-language-server",
+    "clang-format",
+    "clangd",
+    "codelldb",
     "editorconfig-checker",
     "gofumpt",
     "golines",
@@ -28,13 +31,13 @@ require("mason-tool-installer").setup({
     "misspell",
     "prettier",
     "revive",
+    "rust-analyzer",
+    "rustfmt",
     "shellcheck",
     "shellcheck",
     "shfmt",
-    "staticcheck",
     "stylua",
     "vim-language-server",
-    "vint",
   },
   -- if set to true this will check each tool for updates. If updates
   -- are available the tool will be updated. This setting does not
@@ -65,4 +68,8 @@ require("mason-null-ls").setup({
     automatic_setup = true,
     ensure_installed = { "jq" },
   },
+})
+
+require("null-ls").setup({
+  sources = {}
 })

@@ -1,5 +1,11 @@
 return {
   "mfussenegger/nvim-dap",
-  "theHamsta/nvim-dap-virtual-text",
-  "rcarriga/nvim-dap-ui",
+  event = "BufReadPost",
+  dependencies = {
+    "theHamsta/nvim-dap-virtual-text",
+    "rcarriga/nvim-dap-ui",
+    "nvim-telescope/telescope-dap.nvim",
+    "leoluz/nvim-dap-go"
+  }
+
 }
