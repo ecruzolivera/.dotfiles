@@ -7,7 +7,25 @@ return {
     spell = false,         -- sets vim.opt.spell
     signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
     wrap = false,          -- sets vim.opt.wrap
-    showtabline = 0,       -- don't show tabline
+    clipboard = "unnamedplus",
+    nu = true,
+    relativenumber = true,
+    tabstop = 4,
+    softtabstop = 4,
+    shiftwidth = 4,
+    expandtab = true,
+    smartindent = true,
+    wrap = false,
+    swapfile = false,
+    backup = false,
+    undodir = os.getenv "HOME" .. "/.vim/undodir",
+    undofile = true,
+    -- Case insensitive searching UNLESS /C or capital in search
+    incsearch = true,
+    termguicolors = true,
+    scrolloff = 8,
+    signcolumn = "yes",
+    colorcolumn = "120",
   },
   g = {
     mapleader = " ",                 -- sets vim.g.mapleader
@@ -18,9 +36,9 @@ return {
     icons_enabled = true,            -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
   },
-  plugins = {
-    {},
-  },
+  -- plugins = {
+  --   {},
+  -- },
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
@@ -28,6 +46,6 @@ return {
 --   local_vim.g.mapleader = " "
 --   local_vim.opt.whichwrap = vim.opt.whichwrap - { 'b', 's' } -- removing option from list
 --   local_vim.opt.shortmess = vim.opt.shortmess + { I = true } -- add to option list
---
+
 --   return local_vim
 -- end

@@ -44,10 +44,21 @@ return {
     ["<leader>gl"] = { "<cmd>Git log<CR>", desc = "Git Diff" },
     -- Undo tree
     ["<leader>u"] = { "<cmd>UndotreeToggle<CR>", desc = "UndotreeToggle" },
+    -- lsp
+    ["gd"] = { vim.lsp.buf.definition, desc = "Goto Definition" },
+    ["gr"] = { require("telescope").lsp_references, desc = "Search References" },
+    ["gk"] = { vim.lsp.buf.hover, desc = "Show Help" },
+    ["gI"] = { vim.lsp.buf.implementation, desc = "Goto Implementation" },
+    ["gD"] = { vim.lsp.buf.type_definition, desc = "Goto Definition" },
+    ["<leader>lf"] = { vim.lsp.buf.format, desc = "Format" },
+    ["<leader>lr"] = { vim.lsp.buf.rename, desc = "Rename" },
+    ["<leader>la"] = { vim.lsp.buf.code_action, desc = "Code Action" },
+    ["<leader>ld"] = { require("telescope").lsp_document_symbols, desc = "Document Symbols" },
+    ["<leader>lw"] = { require("telescope").lsp_dynamic_workspace_symbols, desc = "Workspace Symbols" },
   },
   i = {
     ["<C-s>"] = { "<ESC>:w!<cr>", desc = "Save File" },
-    ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
+    -- ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
     ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move down" },
     ["<A-k>"] = { "<esc><cmd>m .-2<cr>==gi", desc = "Move up" },
   },

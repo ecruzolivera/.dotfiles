@@ -20,9 +20,10 @@ return {
   {
     "tpope/vim-fugitive",
     event = "User AstroGitFile",
+    cmd = "Git",
   },
   {
-    -- "ray-x/lsp_signature.nvim",
-    -- event = "User AstroFile",
+    "mbbill/undotree",
+    event = "User AstroFile",
   },
 }
