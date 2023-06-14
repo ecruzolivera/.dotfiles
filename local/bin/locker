@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+#scrot /tmp/currentworkspace.png
+#convert /tmp/currentworkspace.png -blur 0x5 /tmp/currentworkspaceblur.png
+i3lock --nofork -c 282828

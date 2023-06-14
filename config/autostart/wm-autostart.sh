@@ -15,7 +15,7 @@ function run {
 run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # xrandr layout for AwesomeWM
-run ~/.config/autostart/multimonitor_samsung32.sh
+run ~/.screenlayout/hdmi-samsung-monitor.sh
 
 # Start compositor
 #run picom --experimental-backend
@@ -64,7 +64,6 @@ run slack
 run brave 
 
 # lock after 10 min
-# run xautolock -time 10 -locker blurlock
 run xset s 600
-run xss-lock xlock +resetsaver
+run xss-lock locker
 
