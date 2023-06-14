@@ -13,6 +13,7 @@ return {
         "tsserver",
         "marksman",
         "rust_analyzer",
+        "slint_lsp",
         "jsonls",
         "yamlls",
       },

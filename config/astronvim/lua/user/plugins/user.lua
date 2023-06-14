@@ -26,4 +26,9 @@ return {
     "mbbill/undotree",
     event = "User AstroFile",
   },
+  {
+    "slint-ui/vim-slint",
+    event = "User AstroFile",
+    ft = { "slint", "rs" },
+  },
 }
