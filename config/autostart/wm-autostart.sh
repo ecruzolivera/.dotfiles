@@ -3,10 +3,9 @@
 # Launch Apps when AwesomeWM starts.
 
 function run {
-  if ! pgrep -f $1 ;
-  then
-    $@&
-  fi
+	if ! pgrep -f $1; then
+		$@ &
+	fi
 }
 
 # List the apps you wish to run on startup below preceded with "run"
@@ -21,33 +20,33 @@ run ~/.screenlayout/hdmi-samsung-monitor.sh
 #run picom --experimental-backend
 
 # sxhkd Hotkeys
-run sxhkd 
+run sxhkd
 
 # Start Volume Control applet
-#run volctl 
+#run volctl
 run volumeicon
 
-# Start Network Manager Applet 
-run nm-applet 
+# Start Network Manager Applet
+run nm-applet
 
 # Set Numlock key to active.
-run numlockx 
+run numlockx
 
 # Screensaver
-#run xscreensaver -no-splash 
+#run xscreensaver -no-splash
 
 # Pamac system update notifications
-# run pamac-tray 
+# run pamac-tray
 
 # Bluetooth
-run blueman-applet 
+run blueman-applet
 #run blueberry-tray
 
 # MPD
-# run mpd ~/.config/mpd/mpd.conf 
+# run mpd ~/.config/mpd/mpd.conf
 
 # Unclutter - (hides mouse pointer after 5 seconds of inactivity)
-run unclutter 
+run unclutter
 
 # Power managment
 #run xfsettingsd --daemon
@@ -59,11 +58,10 @@ run xfce4-power-manager
 # run  redshift -P -O 3200
 
 # Init Apps at startup
-run megasync 
-run slack 
-run brave 
+run megasync
+run slack
+run brave
 
 # lock after 10 min
 run xset s 600
-run xss-lock locker
-
+run xss-lock ~/.local/bin/locker

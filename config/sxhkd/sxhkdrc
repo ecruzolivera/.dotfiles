@@ -16,7 +16,7 @@ super + p
 
 # Lock Screen
 super + x; {x, s, r, p}
-    {locker, systemctl suspend, systemctl reboot, systemctl poweroff}
+    {~/.local/bin/locker, systemctl suspend, systemctl reboot, systemctl poweroff}
 
 # File Navigators
 super + e; {e, t}

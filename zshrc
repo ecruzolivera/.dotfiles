@@ -147,8 +147,8 @@ alias xmerge="xrdb -merge ~/.Xresources"
 DEFAULT_USER=ernesto
 
 # Snapcraft configuration
-export SNAPCRAFT_BUILD_ENVIRONMENT_CPU=8 
-export SNAPCRAFT_BUILD_ENVIRONMENT_MEMORY=16G
+export SNAPCRAFT_BUILD_ENVIRONMENT_CPU=$(($(nproc) - 1))
+export SNAPCRAFT_BUILD_ENVIRONMENT_MEMORY=24G
 #
 # other 
 export XDG_CONFIG_HOME="$HOME/.config"
