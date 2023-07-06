@@ -27,6 +27,18 @@ return {
     event = "User AstroFile",
   },
   {
+    "nathom/filetype.nvim",
+    ft = { "qrc" },
+    lazy = false,
+    opts = {
+      overrides = {
+        extensions = {
+          qrc = "xml",
+        },
+      },
+    },
+  },
+  {
     "slint-ui/vim-slint",
     event = "User AstroFile",
     ft = { "slint", "rs" },
