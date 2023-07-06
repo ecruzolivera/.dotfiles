@@ -11,7 +11,10 @@ function run {
 # List the apps you wish to run on startup below preceded with "run"
 
 # Policy kit (needed for GUI apps to ask for password)
-run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+run lxqt-policykit-agent
+
+# USB managment
+run diskie --tray
 
 # xrandr layout for AwesomeWM
 run ~/.screenlayout/hdmi-samsung-monitor.sh
@@ -32,18 +35,12 @@ run nm-applet
 # Set Numlock key to active.
 run numlockx
 
-# Screensaver
-#run xscreensaver -no-splash
-
 # Pamac system update notifications
 # run pamac-tray
 
 # Bluetooth
 run blueman-applet
 #run blueberry-tray
-
-# MPD
-# run mpd ~/.config/mpd/mpd.conf
 
 # Unclutter - (hides mouse pointer after 5 seconds of inactivity)
 run unclutter
@@ -52,7 +49,7 @@ run unclutter
 #run xfsettingsd --daemon
 
 # Power managment
-run xfce4-power-manager
+run lxqt-powermanagement
 
 # Redshift screen
 # run  redshift -P -O 3200
