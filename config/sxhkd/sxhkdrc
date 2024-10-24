@@ -1,0 +1,59 @@
+####################
+# SXHKD CONFIG
+####################
+
+# Restart sxhkd hotkey daemon
+super + shift + x
+  pkill -USR1 -x sxhkd && notify-send "sxhkd config" "Reloaded."
+
+
+# Rofi Launcher
+super + space
+    rofi -show drun -show-icons
+
+super + p
+    rofi  -show find -modi find:~/.local/share/rofi/finder.sh
+
+# Lock Screen
+super + x; {x, s, r, p}
+    {~/.local/bin/locker, systemctl suspend, systemctl reboot, systemctl poweroff}
+
+# File Navigators
+super + e; {w, e, t}
+    {kitty -e yazi, kitty -e ranger, thunar}
+
+####################
+# Media Keys
+####################
+
+# Pulse Audio Master Volume
+super + {Down,Up}
+    amixer set Master {5%-,5%+}
+
+# Speaker Volume
+XF86Audio{Mute,Play,LowerVolume,RaiseVolume}
+    amixer set Master {toggle,toggle,5%-,5%+}
+
+# Mute Mic Audio
+XF86AudioMicMute
+    amixer set Capture toggle
+
+#Brightness up
+XF86MonBrightnessUp
+    brightnessctl set +5% && ~/.local/bin/brightness-notify.sh 
+
+#Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 5%- && ~/.local/bin/brightness-notify.sh 
+
+####################
+# SCREEN SNAPSHOTS
+####################
+
+# Print Screen
+Print
+    flameshot gui 
+
+
+
+

@@ -1,0 +1,6 @@
+
+config/nvim/plugin
+config/nvim/plugin/packer_compiled.lua
+config/qtile/__pycache__
+config/QtProject/QtCreator.ini
+config/SpeedCrunch/SpeedCrunch.ini
