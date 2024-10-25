@@ -1,0 +1,33 @@
+source ~/.vimrc
+
+
+" Enable ideavim plugins: https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins
+set NERDTree
+set highlightedyank
+set matchit
+set quickscope
+
+set timeoutlen=3000
+
+" Navigation
+:map <leader>f <Action>(GotoFile)
+:map <leader>g <Action>(FindInPath)
+:map <leader>e :NERDTreeToggle<CR>
+:map <C-p> <Action>(GotoFile)
+:map <C-S-p> <Action>(SearchEverywhere)
+:map za <Action>(ExpandCollapseToggleAction)
+
+
+" LSP
+:map <Leader>lf <Action>(ReformatCode)
+:map <Leader>lr <Action>(RenameElement)
+:map <Leader>la <Action>(ShowIntentionActions)
+:map ]d <Action>(GotoNextError)
+
+
+" Debugging
+:map <Leader>df <Action>(Run)
+:map <Leader>dc <Action>(Debug)
+:map <Leader>db <Action>(ToggleLineBreakpoint)
+
+

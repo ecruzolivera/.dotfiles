@@ -79,30 +79,6 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 " Auto read files externally modified 
 set autoread                                                                                                                                                                                    
 
-" PLUGINS """""""""""""""""""""""""""""""" {{{
-
-" Plugin code goes here.
-" call plug#begin('~/.vim/plugged')
-"
-"     Plug 'tyru/open-browser.vim'
-"     Plug 'aklt/plantuml-syntax'
-"     Plug 'weirongxu/plantuml-previewer.vim'
-"     Plug 'mtdl9/vim-log-highlighting'
-"     Plug 'peterhoeg/vim-qml'
-"     Plug 'bkad/camelcasemotion'
-"     Plug 'mg979/vim-visual-multi'
-"     Plug 'morhetz/gruvbox'
-"     Plug 'tpope/vim-commentary'
-"     Plug 'tpope/vim-surround'
-"     Plug 'vim-airline/vim-airline'
-"     Plug 'vim-airline/vim-airline-themes'
-"     Plug 'preservim/nerdtree'
-"     Plug 'Xuyuanp/nerdtree-git-plugin'
-"
-" call plug#end()
-" }}}
-
-
 " MAPPINGS """""""""""""""""""""""""""""""- {{{
 
 " Mappings code goes here.
