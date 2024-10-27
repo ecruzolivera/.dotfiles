@@ -128,7 +128,10 @@ fi
 # Source things
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 # fzf shortcuts
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -n "${commands[fzf-share]}" ]; then
+  source "$(fzf-share)/key-bindings.zsh"
+  source "$(fzf-share)/completion.zsh"
+fi
 # mise
 if command -v "mise" > /dev/null 2>&1; then
     eval "$(mise activate zsh)"
@@ -207,3 +210,4 @@ function yy() {
 # fpath=(/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/contrib/zsh $fpath)
 # compinit
 # <<<<  Vagrant command completion (end)
+#
