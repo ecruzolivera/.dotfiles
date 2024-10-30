@@ -113,8 +113,8 @@ nnoremap <C-u> <C-u>zz
 " keep the cursor centered when searching next/prev
 nnoremap n nzzzv
 nnoremap N Nzzzv
-" sane paste, will keep the copy value instead of replace it with the deleted one
-xnoremap p [["_dP]])
+" sane paste, will keep the copy value instead of replace it with the deleted one (this breaks IDEA VIM)
+" xnoremap p [["_dP]])
 " search outside vim
 nnoremap <C-f> <cmd>silent !tmux neww tmux-sessionizer<CR>
 

@@ -6,8 +6,7 @@ set NERDTree
 set highlightedyank
 set matchit
 set quickscope
-
-set timeoutlen=3000
+set ideajoin
 
 " Navigation
 :map <leader>f <Action>(GotoFile)
@@ -29,5 +28,3 @@ set timeoutlen=3000
 :map <Leader>df <Action>(Run)
 :map <Leader>dc <Action>(Debug)
 :map <Leader>db <Action>(ToggleLineBreakpoint)
-
-
