@@ -96,6 +96,7 @@ vnoremap > >gv
 " nnoremap k  gk   
 " nnoremap j  gj   
 nnoremap <leader>h :nohls<CR>
+nnoremap <leader>q :q<CR>
 " easy colon
 nnoremap ; :
 " easy save
