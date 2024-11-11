@@ -59,7 +59,7 @@
     fira-code-nerdfont
     gcc
     imagemagick
-    kitty
+    # kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
     lazydocker
     lazygit
     mise
