@@ -47,6 +47,7 @@
     wget
     zsh
     tmux
+    zellij
     
     # Dev
     vim
@@ -91,6 +92,7 @@
     sqlitebrowser
     xournalpp
     flameshot
+    gimp
     qbittorrent
     ranger
     vlc
