@@ -39,39 +39,40 @@
     fastfetch
     fd
     gdu
+    jq
     just
     ripgrep # Better `grep`
+    tmux
     tree
     tree
     watchman
     wget
-    zsh
-    tmux
     zellij
+    zsh
     
     # Dev
-    vim
-    neovim
+    # kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
+    # vagrant
+    alejandra
     cmake
     cmake-format
     cmake-lint
+    deadnix
     diff-so-fancy
     fira-code-nerdfont
     gcc
     imagemagick
-    # kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
     lazydocker
     lazygit
     mise
+    neovim
+    nixd
     openjdk
     plantuml
     rustup
     sqlite
-    nixd
     statix
-    deadnix
-    alejandra
-    # vagrant
+    vim
 
     # Media
     ffmpeg
@@ -88,15 +89,14 @@
     # megasync # Only build from source option available
     # localsend # https://github.com/NixOS/nixpkgs/issues/348345
     # vscode # seems that it doesnt work on single user installations
-    libreoffice
-    sqlitebrowser
-    xournalpp
     flameshot
     gimp
+    libreoffice
     qbittorrent
     ranger
+    sqlitebrowser
     vlc
-    # vscode
+    xournalpp
     zathura
   ];
 
