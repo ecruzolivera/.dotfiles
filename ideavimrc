@@ -10,7 +10,8 @@ set ideajoin
 set commentary
 
 " Navigation
-:map <leader>f <Action>(GotoFile)
+:map <leader>p <Action>(GotoFile)
+:map <leader>fw <Action>(TextSearchAction)
 :map <leader>g <Action>(FindInPath)
 :map <leader>e :NERDTreeToggle<CR>
 :map <C-p> <Action>(GotoFile)
