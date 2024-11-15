@@ -14,3 +14,5 @@ sudo ufw allow 8081
 sudo ufw allow 30000
 # localsend
 sudo ufw allow 53317
+sudo ufw allow 53317/tcp
+sudo ufw allow 53317/udp
