@@ -91,6 +91,7 @@
     # vscode # seems that it doesnt work on single user installations
     flameshot
     gimp
+    inkscape
     libreoffice
     qbittorrent
     ranger
