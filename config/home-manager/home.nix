@@ -72,6 +72,7 @@
     rustup
     sqlite
     statix
+    tio
     vim
 
     # Media
