@@ -49,6 +49,7 @@
     wget
     zellij
     zsh
+    rsync
     
     # Dev
     # kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
