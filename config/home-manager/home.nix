@@ -97,6 +97,7 @@
     libreoffice
     qbittorrent
     ranger
+    yazi
     sqlitebrowser
     vlc
     xournalpp
