@@ -57,3 +57,6 @@ run brave
 # lock after 10 min
 run xset s 600
 run xss-lock ~/.local/bin/locker
+
+# touchpad
+run xinput set-prop "Synaptics TM3108-002" "libinput Tapping Enabled" 1
