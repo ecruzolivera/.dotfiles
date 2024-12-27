@@ -10,7 +10,7 @@ sort_reverse 	 = false
 sort_dir_first = true
 sort_translit  = false
 linemode       = "size"
-show_hidden    = true
+show_hidden    = false
 show_symlink   = true
 scrolloff      = 5
 mouse_events   = [ "click", "scroll" ]
@@ -55,6 +55,14 @@ play = [
 	{ run = 'mpv --force-window %*', orphan = true, for = "windows" },
 	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
 ]
+evince = [
+	{ run = 'evince "$@"', orphan = true, for = "linux" },
+]
+gimp = [
+	{ run = 'gimp "$@"', orphan = true, for = "linux" },
+]
+
+
 
 [open]
 rules = [
@@ -62,8 +70,10 @@ rules = [
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
+	# PDF
+	{ mime = "application/pdf", use = ["open", "evince", "reveal"] },
 	# Image
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "open", "gimp", "reveal"] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive

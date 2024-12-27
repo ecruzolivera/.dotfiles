@@ -75,6 +75,7 @@
     statix
     tio
     vim
+    yazi
 
     # Media
     ffmpeg
