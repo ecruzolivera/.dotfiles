@@ -12,7 +12,7 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 
 # Use 6 fixed workspaces instead of dynamic mode
 gsettings set org.gnome.mutter dynamic-workspaces false
-gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
 
 # Use alt for pinned apps
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "['<Alt>1']"
@@ -49,7 +49,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'sh -c -- "flameshot gui"'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Control>Print'
 
-# Set Ranger
+# Set Yazi
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ name 'Yazi'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ command 'kitty -e yazi'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/ binding '<Super>e'
