@@ -75,7 +75,6 @@
     statix
     tio
     vim
-    yazi
 
     # Media
     ffmpeg
@@ -97,7 +96,6 @@
     inkscape
     libreoffice
     qbittorrent
-    ranger
     yazi
     sqlitebrowser
     vlc
