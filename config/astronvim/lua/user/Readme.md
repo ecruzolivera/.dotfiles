@@ -1,3 +1,0 @@
-# Readme
-
-**Ernesto** astronvim config
