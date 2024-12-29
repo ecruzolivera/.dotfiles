@@ -94,8 +94,8 @@ return {
           function() require("telescope.builtin").find_files() end,
           desc = "Find files",
         },
-        ["<leader>fm"] = {
-          function() require("telescope").extensions.media_files.media_files() end,
+        ["<leader>fi"] = {
+          "<cmd>Telescope media_files<CR>",
           desc = "Find Media",
         },
         -- highlight move

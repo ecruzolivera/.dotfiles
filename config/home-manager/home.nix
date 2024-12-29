@@ -62,7 +62,6 @@
     diff-so-fancy
     fira-code-nerdfont
     gcc
-    imagemagick
     lazydocker
     lazygit
     mise
@@ -77,6 +76,8 @@
     vim
 
     # Media
+    chafa
+    imagemagick
     ffmpeg
     ffmpegthumbnailer
 
