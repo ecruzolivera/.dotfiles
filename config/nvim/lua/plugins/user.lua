@@ -182,15 +182,15 @@ return {
     "nvim-telescope/telescope-media-files.nvim",
     cmd = "Telescope",
   },
-  {
-    "andrewferrier/wrapping.nvim",
-    ft = { "md", "markdown" },
-    opts = {
-      set_nvim_opt_defaults = false,
-      -- notify_on_switch = true,
-      softener = { markdown = true },
-    },
-  },
+  -- {
+  --   "andrewferrier/wrapping.nvim",
+  --   ft = { "md", "markdown" },
+  --   opts = {
+  --     set_nvim_opt_defaults = false,
+  --     -- notify_on_switch = true,
+  --     softener = { markdown = true },
+  --   },
+  -- },
   {
     "LunarVim/bigfile.nvim",
     event = "BufReadPre",
