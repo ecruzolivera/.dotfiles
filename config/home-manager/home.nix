@@ -93,6 +93,7 @@
     # megasync # Only build from source option available
     # localsend # https://github.com/NixOS/nixpkgs/issues/348345
     # vscode # seems that it doesnt work on single user installations
+    postman
     meld
     flameshot
     gimp
