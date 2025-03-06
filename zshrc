@@ -109,18 +109,6 @@ if [ -d "$HOME/.emacs.d/bin" ] ;
   then PATH="$HOME/.emacs.d/bin:$PATH"
 fi
 
-if [ -d "$HOME/Android/Sdk/platform-tools" ] ;
-  then PATH="$HOME/Android/Sdk/platform-tools:$PATH"
-fi
-
-if [ -d "$HOME/Android/Sdk/emulator" ] ;
-  then PATH="$HOME/Android/Sdk/emulator:$PATH"
-fi
-
-if [ -d "$HOME/Android/Sdk" ] ;
-  then export ANDROID_HOME="$HOME/Android/Sdk"
-fi
-
 if [ -d "$HOME/.local/share/pnpm" ] ;
   then PATH="$HOME/.local/share/pnpm:$PATH"
 fi
