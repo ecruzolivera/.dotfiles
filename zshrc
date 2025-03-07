@@ -96,6 +96,7 @@ export VISUAL='nvim'
 
 #PS1='[\u@\h \W]\$ '
 
+# Source things
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
@@ -104,6 +105,17 @@ if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "$HOME/Android/Sdk" ] ;
+  then export ANDROID_HOME="$HOME/Android/Sdk"
+fi
+
+if [ -d "$HOME/Android/Sdk/platform-tools" ] ;
+  then PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+fi
+
+if [ -d "$HOME/Android/Sdk/emulator" ] ;
+  then PATH="$HOME/Android/Sdk/emulator:$PATH"
+fi
 
 if [ -d "$HOME/.emacs.d/bin" ] ;
   then PATH="$HOME/.emacs.d/bin:$PATH"
@@ -113,7 +125,6 @@ if [ -d "$HOME/.local/share/pnpm" ] ;
   then PATH="$HOME/.local/share/pnpm:$PATH"
 fi
 
-# Source things
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 # fzf shortcuts
 if [ -n "${commands[fzf-share]}" ]; then
