@@ -13,6 +13,7 @@ set commentary
 :map <leader>p <Action>(GotoFile)
 :map <leader>fw <Action>(TextSearchAction)
 :map <leader>g <Action>(FindInPath)
+:map gr <Action>(GotoDeclaration)
 :map <leader>e :NERDTreeToggle<CR>
 :map <C-p> <Action>(GotoFile)
 :map <C-S-p> <Action>(SearchEverywhere)
