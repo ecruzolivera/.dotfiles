@@ -165,9 +165,9 @@ alias gbd="git branch | grep -v "master" | xargs git branch -D"
 alias gbc="git -c switch"
 
 alias ls="exa -l --group-directories-first"
-alias cat=batcat
+alias cat=bat
 alias grep="rg -uu"
-alias open=xdg-open
+# alias open=xdg-open
 alias xemulator="QT_QPA_PLATFORM=xcb emulator"
 # alias npm=pnpm
 # alias npx="pnpm dlx"

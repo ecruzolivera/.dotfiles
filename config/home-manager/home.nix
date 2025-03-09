@@ -1,10 +1,16 @@
 { config, pkgs, ... }:
 
+
+let
+  mac-app-util-src = builtins.fetchTarball "https://github.com/hraban/mac-app-util/archive/master.tar.gz";
+  mac-app-util = import mac-app-util-src {};
+in
+
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "ernesto";
-  home.homeDirectory = "/home/ernesto";
+  home.homeDirectory = "/Users/ernesto";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -13,9 +19,13 @@
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion = "24.11"; # Please read the comment before changing.
 
   news.display = "silent";
+
+  imports = [
+    mac-app-util.homeManagerModules.default
+  ];
   nixpkgs = {
       config = {
         allowUnfree = true;
@@ -38,6 +48,8 @@
     bottom
     fastfetch
     fd
+    bat
+    eza
     gdu
     jq
     just
@@ -49,10 +61,12 @@
     wget
     zellij
     zsh
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    skhd
     rsync
-    
     # Dev
-    # kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
+    kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
     # vagrant
     alejandra
     cmake
@@ -60,7 +74,7 @@
     cmake-lint
     deadnix
     diff-so-fancy
-    fira-code-nerdfont
+    nerd-fonts.fira-code
     gcc
     lazydocker
     lazygit
@@ -75,6 +89,7 @@
     tio
     vim
     tokei
+    ghostty
 
     # Media
     chafa
@@ -87,22 +102,22 @@
 
     # GUIs
     # Doesnt work in single user installs https://github.com/NixOS/nixpkgs/issues/121694
-    # obsidian 
-    # brave
-    # google-chrome
-    # megasync # Only build from source option available
-    # localsend # https://github.com/NixOS/nixpkgs/issues/348345
-    # vscode # seems that it doesnt work on single user installations
+    obsidian 
+    #brave
+    google-chrome
+    #megasync # Only build from source option available
+    localsend # https://github.com/NixOS/nixpkgs/issues/348345
+    vscode # seems that it doesnt work on single user installations
     postman
     meld
     flameshot
     gimp
     inkscape
-    libreoffice
+    #libreoffice
     qbittorrent
     yazi
     sqlitebrowser
-    vlc
+    #vlc
     xournalpp
     zathura
   ];
