@@ -36,13 +36,6 @@ in
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  programs = {
-    # Let Home Manager install and manage itself.
-    home-manager.enable = true;
-  };
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = with pkgs; [
      # Unix tools
     bottom
@@ -63,8 +56,8 @@ in
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
-    # skhd
     rsync
+
     # Dev
     # vagrant
     watchman
@@ -97,13 +90,10 @@ in
     ffmpeg
     ffmpegthumbnailer
 
-    xclip
-    wl-clipboard
 
     # GUIs
     # Doesnt work in single user installs https://github.com/NixOS/nixpkgs/issues/121694
     localsend # https://github.com/NixOS/nixpkgs/issues/348345
-    # vscode # seems that it doesnt work on single user installations
     postman
     meld
     flameshot
@@ -112,8 +102,23 @@ in
     yazi
     sqlitebrowser
     xournalpp
-    zathura
-  ];
+    xz
+  ]++ (pkgs.lib.optionals pkgs.stdenv.isDarwin [
+  # macOS-only packages
+  skhd
+]) ++ (pkgs.lib.optionals pkgs.stdenv.isLinux [
+  # Linux-only packages
+  xclip
+  wl-clipboard
+  zathura
+]);
+
+  # The home.packages option allows you to install Nix packages into your
+  # environment.
+  programs = {
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
+  };
 
 
   programs.fzf = {
