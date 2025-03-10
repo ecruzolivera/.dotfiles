@@ -165,103 +165,6 @@ in
     };
   };
 
-
-#   programs.zsh = {
-#     enable = true;
-#     enableCompletion = true;
-#     autosuggestion.enable = true;
-#     syntaxHighlighting.enable = true;
-#     # ohMyZsh = {
-#     #   enable = true;
-#     #   theme = "agnoster";
-#     #   plugins = [ 
-#     #     "git" 
-#     #     "zsh-vi-mode"
-#     #   ]; 
-#     # };
-#     history = {
-#         size = 10000;
-#         path = "${config.xdg.dataHome}/zsh/history";
-#     };
-#     shellAliases = {
-#       update_nix = "home-manager switch";
-#       gsm="git switch master";
-#       gbd="git branch | grep -v \"master\" | xargs git branch -D";
-#       gbc="git -c switch";
-#       ls="exa -l --group-directories-first";
-#       cat="bat";
-#       grep="rg -uu";
-#       open="xdg-open";
-#       xemulator="QT_QPA_PLATFORM=xcb emulator";
-#       # upgrade_all="sudo apt upgrade -y && sudo snap refresh && flatpak update -y && brew update && rustup update && npm update -g";
-#       hf="history|grep -i";
-#       vim="nvim";
-#       e="nvim";
-#       xmerge="xrdb -merge ~/.Xresources";
-#     };
-#     initExtra = ''
-# source ~/.profile
-# HYPHEN_INSENSITIVE="true"
-# HIST_STAMPS="yyyy-mm-dd"
-# setopt NONOMATCH
-# setopt SHARE_HISTORY
-# export HISTCONTROL=ignoreboth:erasedups
-# if [ -d "$HOME/.bin" ] ;
-#   then PATH="$HOME/.bin:$PATH"
-# fi
-#
-# if [ -d "$HOME/.local/bin" ] ;
-#   then PATH="$HOME/.local/bin:$PATH"
-# fi
-#
-#
-# if [ -d "$HOME/.emacs.d/bin" ] ;
-#   then PATH="$HOME/.emacs.d/bin:$PATH"
-# fi
-#
-# if [ -d "$HOME/Android/Sdk/platform-tools" ] ;
-#   then PATH="$HOME/Android/Sdk/platform-tools:$PATH"
-# fi
-#
-# if [ -d "$HOME/Android/Sdk/emulator" ] ;
-#   then PATH="$HOME/Android/Sdk/emulator:$PATH"
-# fi
-#
-# if [ -d "$HOME/Android/Sdk" ] ;
-#   then export ANDROID_HOME="$HOME/Android/Sdk"
-# fi
-#
-# if [ -d "$HOME/.local/share/pnpm" ] ;
-#   then PATH="$HOME/.local/share/pnpm:$PATH"
-# fi
-#
-# # Source things
-# [ -f ~/.cargo/env ] && source ~/.cargo/env
-# # fzf shortcuts
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# # mise
-# [ -f ~/.local/bin/mise ] && eval "$(mise activate zsh)"
-# # vi mode
-# set -o vi
-# bindkey -s ^f "tmux-sessionizer\n"
-#
-# ## Functions
-# function yy() {
-#   local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-#   yazi "$@" --cwd-file="$tmp"
-#   if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-# 	  cd -- "$cwd"
-#   fi
-#   rm -f -- "$tmp"
-# }
-#
-# # >>>> Vagrant command completion (start)
-# # fpath=(/opt/vagrant/embedded/gems/gems/vagrant-2.4.1/contrib/zsh $fpath)
-# # compinit
-# # <<<<  Vagrant command completion (end)
-# '';
-#   };
-#
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
@@ -293,8 +196,5 @@ in
   #
   #  /etc/profiles/per-user/ernesto/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
 }
 
