@@ -63,11 +63,11 @@ in
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
-    skhd
+    # skhd
     rsync
     # Dev
-    kitty # breaks when launching from terminal https://github.com/NixOS/nixpkgs/issues/80936
     # vagrant
+    watchman
     alejandra
     cmake
     cmake-format
@@ -89,7 +89,7 @@ in
     tio
     vim
     tokei
-    ghostty
+    # ghostty
 
     # Media
     chafa
@@ -102,22 +102,15 @@ in
 
     # GUIs
     # Doesnt work in single user installs https://github.com/NixOS/nixpkgs/issues/121694
-    obsidian 
-    #brave
-    google-chrome
-    #megasync # Only build from source option available
     localsend # https://github.com/NixOS/nixpkgs/issues/348345
-    vscode # seems that it doesnt work on single user installations
+    # vscode # seems that it doesnt work on single user installations
     postman
     meld
     flameshot
     gimp
-    inkscape
-    #libreoffice
     qbittorrent
     yazi
     sqlitebrowser
-    #vlc
     xournalpp
     zathura
   ];
