@@ -94,6 +94,15 @@ return {
           function() require("telescope.builtin").find_files() end,
           desc = "Find files",
         },
+        ["<C-s-P>"] = {
+          function()
+            require("telescope.builtin").find_files {
+              hidden = true,
+              no_ignore = true,
+            }
+          end,
+          desc = "Find all files",
+        },
         ["<leader>fi"] = {
           "<cmd>Telescope media_files<CR>",
           desc = "Find Media",
@@ -167,6 +176,19 @@ return {
         },
       },
       i = {
+        ["<C-p>"] = {
+          function() require("telescope.builtin").find_files() end,
+          desc = "Find files",
+        },
+        ["<C-s-P>"] = {
+          function()
+            require("telescope.builtin").find_files {
+              hidden = true,
+              no_ignore = true,
+            }
+          end,
+          desc = "Find all files",
+        },
         ["<C-s>"] = { "<ESC>:w!<cr>", desc = "Save File" },
         -- ["<C-p>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" },
         ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", desc = "Move down" },
