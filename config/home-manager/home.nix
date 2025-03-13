@@ -85,6 +85,7 @@ in
     # ghostty
 
     # Media
+    mpv
     chafa
     imagemagick
     ffmpeg
