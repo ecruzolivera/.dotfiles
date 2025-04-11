@@ -73,7 +73,6 @@
     sqlite
     statix
     tio
-    vim
     tokei
 
     # Media
