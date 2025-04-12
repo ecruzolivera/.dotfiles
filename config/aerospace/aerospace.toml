@@ -144,6 +144,8 @@ alt-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
+alt-e = 'exec-and-forget open -n /Applications/Ghostty.app --args -e zsh -ic yazi'
+
 alt-f = 'fullscreen'
 alt-shift-f = 'macos-native-fullscreen'
 
