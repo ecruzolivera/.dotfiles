@@ -80,7 +80,6 @@ in
     sqlite
     statix
     tio
-    vim
     tokei
     # ghostty
 
