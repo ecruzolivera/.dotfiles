@@ -61,7 +61,7 @@
     deadnix
     diff-so-fancy
     fira-code-nerdfont
-    gcc
+    # gcc
     lazydocker
     lazygit
     mise

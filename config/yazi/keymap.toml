@@ -127,7 +127,7 @@ keymap = [
   { on = [ "g", "i"] , run = "cd /media/$USER/",   desc = "Go to the Mounted USB" },
 
   { on = [ "g", "r", "r"] , run = "cd ~/TTRPG/",                             desc = "Go to the TTRPG directory" },
-  { on = [ "g", "r", "s"] , run = "cd ~/TTRPG/Shadowdark RPG/",   desc = "Go to the SWADE directory" },
+  { on = [ "g", "r", "s"] , run = "cd '~/TTRPG/Shadowdark RPG/'",   desc = "Go to the Shadowdark directory" },
   { on = [ "g", "r", "w"] , run = "cd ~/TTRPG/WFRP/",                        desc = "Go to the WFRP directory" },
   { on = [ "g", "r", "p"] , run = "cd ~/TTRPG/OSR/MorkBorg/Pirate",          desc = "Go to the Pirate directory" },
   { on = [ "g", "r", "c"] , run = "cd ~/TTRPG/OSR/Cairn",                    desc = "Go to the Cairn directory" },
