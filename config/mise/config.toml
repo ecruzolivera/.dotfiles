@@ -2,4 +2,5 @@
 go = "latest"
 node = "lts"
 deno = "2.0.0"
+ruby = "3.4.4"
 # java = "openjdk-23.0.0"
