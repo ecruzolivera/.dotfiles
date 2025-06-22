@@ -19,6 +19,7 @@ return {
       "jsdoc",
       "json",
       "kotlin",
+      "kdl",
       "lua",
       "make",
       "python",

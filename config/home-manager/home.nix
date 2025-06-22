@@ -47,7 +47,7 @@
     tree
     watchman
     wget
-    zellij
+    # zellij
     zsh
     rsync
     
