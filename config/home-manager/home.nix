@@ -48,6 +48,7 @@
     watchman
     wget
     # zellij
+    rclone
     zsh
     rsync
     
