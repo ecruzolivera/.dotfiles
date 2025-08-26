@@ -2,6 +2,8 @@
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
+--
+local Snacks = require "snacks"
 
 ---@type LazySpec
 return {
@@ -126,10 +128,11 @@ return {
         -- a `cond` key can provided as the string of a server capability to be required to attach, or a function with `client` and `bufnr` parameters from the `on_attach` that returns a boolean
         -- lsp
         ["gd"] = { vim.lsp.buf.definition, desc = "Goto Definition" },
-        ["gD"] = { vim.lsp.buf.declaration, desc = "Declaration of current symbol", cond = "textDocument/declaration" },
         ["gk"] = { vim.lsp.buf.hover, desc = "Show Help" },
-        ["gI"] = { vim.lsp.buf.implementation, desc = "Goto Implementation" },
-        ["gr"] = { vim.lsp.buf.references, desc = "Show References" },
+        ["gD"] = { Snacks.picker.lsp_declarations, desc = "Goto Declaration" },
+        ["gI"] = { Snacks.picker.lsp_implementations, desc = "Goto Implementation" },
+        ["gr"] = { Snacks.picker.lsp_references, desc = "Show References" },
+        ["gy"] = { Snacks.picker.lsp_type_definitions, desc = "Goto T[y]pe Definition" },
 
         ["<leader>lf"] = { vim.lsp.buf.format, desc = "Format" },
         ["<leader>lr"] = { vim.lsp.buf.rename, desc = "Rename" },
