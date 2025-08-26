@@ -38,16 +38,3 @@ vim.api.nvim_create_autocmd("FileType", {
   group = eco_group,
   pattern = { "*" },
 })
-
--- vim.api.nvim_create_user_command("CopyRePath", function()
---   local path = vim.fn.expand "%:p"
---   vim.fn.setreg("+", path)
---   vim.notify('Copied "' .. path .. '" to the clipboard!')
--- end, {})
--- -- auto-reload files when modified externally
--- -- https://unix.stackexchange.com/a/383044
--- vim.o.autoread = true
--- vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
---   command = "if mode() != 'c' | checktime | endif",
---   pattern = { "*" },
--- })

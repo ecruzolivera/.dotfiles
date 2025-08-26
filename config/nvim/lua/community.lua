@@ -33,7 +33,4 @@ return {
   { import = "astrocommunity.programming-language-support.csv-vim" },
   { import = "astrocommunity.recipes.heirline-vscode-winbar" },
   { import = "astrocommunity.search.grug-far-nvim" },
-  -- { import = "astrocommunity.remote-development.remote-sshfs-nvim" },
-
-  -- import/override with your plugins folder
 }
