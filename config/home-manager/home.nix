@@ -61,7 +61,7 @@
     cmake-lint
     deadnix
     diff-so-fancy
-    fira-code-nerdfont
+    nerd-fonts.fira-code
     # gcc
     lazydocker
     lazygit
@@ -93,7 +93,7 @@
     # megasync # Only build from source option available
     # localsend # https://github.com/NixOS/nixpkgs/issues/348345
     # vscode # seems that it doesnt work on single user installations
-    postman
+    # postman
     meld
     flameshot
     gimp
