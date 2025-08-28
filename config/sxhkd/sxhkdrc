@@ -20,7 +20,7 @@ super + x; {x, s, r, p}
 
 # File Navigators
 super + e; {w, e, t}
-    {kitty -e yazi, kitty -e ranger, thunar}
+    {ghostty -e yazi, ghostty -e ranger, thunar}
 
 ####################
 # Media Keys

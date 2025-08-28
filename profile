@@ -1,4 +1,4 @@
-export TERMINAL=kitty
+export TERMINAL=ghostty
 export QT_STYLE_OVERRIDE=kvantum
 export QT_QPA_PLATFORMTHEME=qt5ct
 [[ -n "$WAYLAND_DISPLAY" ]] && export QT_QPA_PLATFORM=wayland

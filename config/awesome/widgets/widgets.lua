@@ -100,7 +100,7 @@ volume:buttons(gears.table.join(
     awful.util.spawn("amixer -q set Master toggle", false)
   end),
   awful.button({}, 3, function()
-    awful.util.spawn("kitty -e alsamixer", true)
+    awful.util.spawn("ghostty -e alsamixer", true)
   end),
   awful.button({}, 4, function()
     awful.util.spawn("amixer -q set Master 5%+", false)

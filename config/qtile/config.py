@@ -12,7 +12,7 @@ from qtile_extras.widget.decorations import BorderDecoration
 import colors
 
 mod = "mod4"  # Sets mod key to SUPER/WINDOWS
-myTerm = "kitty"  # My terminal of choice
+myTerm = "ghostty"  # My terminal of choice
 myBrowser = "brave"  # My browser of choice
 
 
