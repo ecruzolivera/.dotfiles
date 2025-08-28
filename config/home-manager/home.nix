@@ -61,7 +61,7 @@
     cmake-lint
     deadnix
     diff-so-fancy
-    nerd-fonts.fira-code
+    # nerd-fonts.fira-code
     # gcc
     lazydocker
     lazygit
@@ -95,7 +95,7 @@
     # vscode # seems that it doesnt work on single user installations
     # postman
     meld
-    flameshot
+    # flameshot
     gimp
     inkscape
     libreoffice
