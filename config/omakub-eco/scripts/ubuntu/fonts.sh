@@ -4,7 +4,7 @@ set_font() {
   local font_name=$1
   local url=$2
   local file_type=$3
-  local file_name="${font_name/ Nerd Font/}"
+  local file_name="${font_name}"
 
   if ! $(fc-list | grep -i "$font_name" >/dev/null); then
     cd /tmp
@@ -20,4 +20,4 @@ set_font() {
   gsettings set org.gnome.desktop.interface monospace-font-name "$font_name 12"
 }
 
-set_font "FiraMono Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraMono.zip" "otf"
+set_font "FiraCode Nerd Font" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/FiraCode.zip" "otf"
