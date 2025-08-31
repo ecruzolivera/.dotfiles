@@ -4,7 +4,10 @@ source ~/.profile
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+# export ZSH=~/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -75,9 +78,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  )
+  # zsh-autosuggestions
+  # zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,43 +100,42 @@ export VISUAL='nvim'
 #PS1='[\u@\h \W]\$ '
 
 # Source things
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
+if [ -d "$HOME/.bin" ]; then
+  PATH="$HOME/.bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
+if [ -d "$HOME/.local/bin" ]; then
+  PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/Android/Sdk" ] ;
-  then export ANDROID_HOME="$HOME/Android/Sdk"
+if [ -d "$HOME/Android/Sdk" ]; then
+  export ANDROID_HOME="$HOME/Android/Sdk"
 fi
 
-if [ -d "$HOME/Android/Sdk/platform-tools" ] ;
-  then PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+if [ -d "$HOME/Android/Sdk/platform-tools" ]; then
+  PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 fi
 
-if [ -d "$HOME/Android/Sdk/emulator" ] ;
-  then PATH="$HOME/Android/Sdk/emulator:$PATH"
+if [ -d "$HOME/Android/Sdk/emulator" ]; then
+  PATH="$HOME/Android/Sdk/emulator:$PATH"
 fi
 
-if [ -d "$HOME/.emacs.d/bin" ] ;
-  then PATH="$HOME/.emacs.d/bin:$PATH"
+if [ -d "$HOME/.emacs.d/bin" ]; then
+  PATH="$HOME/.emacs.d/bin:$PATH"
 fi
 
-if [ -d "$HOME/.local/share/pnpm" ] ;
-  then PATH="$HOME/.local/share/pnpm:$PATH"
+if [ -d "$HOME/.local/share/pnpm" ]; then
+  PATH="$HOME/.local/share/pnpm:$PATH"
 fi
 
 [ -f ~/.cargo/env ] && source ~/.cargo/env
 # fzf shortcuts
-if [ -n "${commands[fzf-share]}" ]; then
-  source "$(fzf-share)/key-bindings.zsh"
-  source "$(fzf-share)/completion.zsh"
-fi
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
 # mise
-if command -v "mise" > /dev/null 2>&1; then
-    eval "$(mise activate zsh)"
+if command -v "mise" >/dev/null 2>&1; then
+  eval "$(mise activate zsh)"
 fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -164,7 +166,7 @@ alias gbd="git branch | grep -v "master" | xargs git branch -D"
 alias gbc="git -c switch"
 
 alias ls="exa -l --group-directories-first"
-alias cat=batcat
+alias cat=bat
 alias grep="rg -uu"
 alias open=xdg-open
 alias xemulator="QT_QPA_PLATFORM=xcb emulator"
@@ -183,26 +185,22 @@ DEFAULT_USER=ernesto
 # export SNAPCRAFT_BUILD_ENVIRONMENT_CPU=$(($(nproc) - 1))
 # export SNAPCRAFT_BUILD_ENVIRONMENT_MEMORY=24G
 #
-# other 
+# other
 export XDG_CONFIG_HOME="$HOME/.config"
-
-
 
 # vi mode
 set -o vi
 
 bindkey -s ^f "tmux-sessionizer\n"
 
-
-
 ## Functions
 function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+  yazi "$@" --cwd-file="$tmp"
+  if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+    cd -- "$cwd"
+  fi
+  rm -f -- "$tmp"
 }
 
 # >>>> Vagrant command completion (start)
