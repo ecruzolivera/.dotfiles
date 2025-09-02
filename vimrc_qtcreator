@@ -53,11 +53,10 @@ noremap gr :gotorefs<CR>
 noremap <Space>la :actions<CR>
 noremap <Space>lf :formatdoc<CR>
 noremap <Space>lr :rename<CR>
+noremap <Space>ff :findfiles<CR>
 noremap <Space>fw :findadv<CR>
 noremap <Space>r :run<CR>
 noremap <Space>d :debug<CR>
-noremap <C-p> :findfiles<CR>
-inoremap <C-p> <ESC>:findfiles<CR>
 
 " MOVE LINE/BLOCK
 vnoremap <J> :m'>+<CR>gv=gv
