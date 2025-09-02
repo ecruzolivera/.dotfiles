@@ -10,7 +10,7 @@ set ideajoin
 set commentary
 
 " Navigation
-:map <leader>p <Action>(GotoFile)
+:map <leader>ff <Action>(GotoFile)
 :map <leader>fw <Action>(TextSearchAction)
 :map <leader>g <Action>(FindInPath)
 :map gr <Action>(GotoDeclaration)
