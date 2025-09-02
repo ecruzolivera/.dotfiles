@@ -12,7 +12,7 @@ tee ~/.local/share/applications/Postman.desktop <<'EOF'
 Encoding=UTF-8
 Name=Postman
 Exec=/opt/Postman/app/Postman %U
-Icon=/opt/Postman/app/resources/app/icons/icon_128x128.png
+Icon=/opt/Postman/app/icons/icon_128x128.png
 Terminal=false
 Type=Application
 Categories=Development;
