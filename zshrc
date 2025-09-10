@@ -57,14 +57,6 @@ HYPHEN_INSENSITIVE="true"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-HIST_STAMPS="yyyy-mm-dd"
-
 # If not running interactively, don't do anything
 # [[ $- != *i* ]] && return
 
@@ -86,16 +78,19 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 setopt NONOMATCH
-# setopt GLOB_DOTS
-#share commands between terminal instances or not
+# History control
+HIST_STAMPS="yyyy-mm-dd"
 setopt SHARE_HISTORY
-
+setopt APPEND_HISTORY # Like histappend: append to history file, don't overwrite
+HISTSIZE=32768        # Number of entries in memory history
+SAVEHIST=$HISTSIZE    # Number of entries in history file
 export HISTCONTROL=ignoreboth:erasedups
 
 # Make nvim the default editor
 
 export EDITOR='nvim'
-export VISUAL='nvim'
+export SUDO_EDITOR="$EDITOR"
+export VISUAL="$EDITOR"
 
 #PS1='[\u@\h \W]\$ '
 
@@ -161,14 +156,27 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gsm="git switch master"
-alias gbd="git branch | grep -v "master" | xargs git branch -D"
-alias gbc="git -c switch"
+n() { if [ "$#" -eq 0 ]; then nvim .; else nvim "$@"; fi; }
 
-alias ls="exa -l --group-directories-first"
+# Git
+alias g='git'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
+alias gsm="git switch master"
+alias gbd="git branch | grep -v 'master' | xargs git branch -D"
+alias gbs="git -c switch"
+
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
 alias cat=bat
 alias grep="rg -uu"
-alias open=xdg-open
+open() {
+  xdg-open "$@" >/dev/null 2>&1 &
+}
 alias xemulator="QT_QPA_PLATFORM=xcb emulator"
 # alias npm=pnpm
 # alias npx="pnpm dlx"
