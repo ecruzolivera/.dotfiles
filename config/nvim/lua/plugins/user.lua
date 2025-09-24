@@ -98,4 +98,17 @@ return {
       update_debounce = 1000,
     },
   },
+  {
+    "mtdl9/vim-log-highlighting",
+    ft = { "log" },
+  },
+  -- {
+  --   "zhaozg/vim-diagram",
+  --   ft = { "md", "mmd", "mermaid" },
+  -- },
+  -- {
+  --   "aklt/plantuml-syntax",
+  --   dependencies = {},
+  --   ft = "plantuml",
+  -- },
 }
