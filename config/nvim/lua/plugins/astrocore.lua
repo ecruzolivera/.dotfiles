@@ -75,6 +75,10 @@ return {
         -- quick save
         ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
         [";"] = { ":", desc = "Easy colon" },
+        ["<C-k>"] = {
+          function() require("snacks").picker.files { ignored = true } end,
+          desc = "Find files",
+        },
 
         -- Buffers
         ["<Leader>b"] = { desc = "Buffers" },
