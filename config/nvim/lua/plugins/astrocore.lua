@@ -75,9 +75,26 @@ return {
         -- quick save
         ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
         [";"] = { ":", desc = "Easy colon" },
+
+        -- search files
         ["<C-k>"] = {
           function() require("snacks").picker.files { ignored = true } end,
           desc = "Find files",
+        },
+
+        -- AI
+        ["<Leader>a"] = { desc = "AI" },
+        ["<Leader>ap"] = {
+          function() require("copilot.panel").open {} end,
+          desc = "AI Panel",
+        },
+        ["<Leader>ae"] = {
+          "<cmd>Copilot enable<cr>",
+          desc = "AI Panel",
+        },
+        ["<Leader>ad"] = {
+          "<cmd>Copilot disable<cr>",
+          desc = "AI Panel",
         },
 
         -- Buffers
