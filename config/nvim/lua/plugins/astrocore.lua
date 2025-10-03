@@ -78,7 +78,12 @@ return {
 
         -- search files
         ["<C-k>"] = {
-          function() require("snacks").picker.files { ignored = true } end,
+          function()
+            require("snacks").picker.files {
+              hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat ".git" or {}, "type") == "directory",
+              exclude = { "node_modules" },
+            }
+          end,
           desc = "Find files",
         },
 
