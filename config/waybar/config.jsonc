@@ -4,15 +4,8 @@
   "position": "top",
   "spacing": 0,
   "height": 26,
-  "modules-left": [
-    "custom/omarchy",
-    "hyprland/workspaces"
-  ],
-  "modules-center": [
-    "clock",
-    "custom/update",
-    "custom/screenrecording-indicator"
-  ],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -58,10 +51,11 @@
     "signal": 7,
     "interval": 3600
   },
+
   "cpu": {
     "interval": 5,
     "format": "󰍛",
-    "on-click": "$TERMINAL -e btm"
+    "on-click": "$TERMINAL -e btop"
   },
   "clock": {
     "format": "{:L%A %H:%M}",
@@ -70,13 +64,7 @@
     "on-click-right": "omarchy-cmd-tzupdate"
   },
   "network": {
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ],
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "󰀂",
@@ -94,30 +82,8 @@
     "format-charging": "{icon}",
     "format-plugged": "",
     "format-icons": {
-      "charging": [
-        "󰢜",
-        "󰂆",
-        "󰂇",
-        "󰂈",
-        "󰢝",
-        "󰂉",
-        "󰢞",
-        "󰂊",
-        "󰂋",
-        "󰂅"
-      ],
-      "default": [
-        "󰁺",
-        "󰁻",
-        "󰁼",
-        "󰁽",
-        "󰁾",
-        "󰁿",
-        "󰂀",
-        "󰂁",
-        "󰂂",
-        "󰁹"
-      ]
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "format-full": "󰂅",
     "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
@@ -144,11 +110,7 @@
     "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ]
+      "default": ["", "", ""]
     }
   },
   "group/tray-expander": {
@@ -157,10 +119,7 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": [
-      "custom/expand-icon",
-      "tray"
-    ]
+    "modules": ["custom/expand-icon", "tray"]
   },
   "custom/expand-icon": {
     "format": " ",
