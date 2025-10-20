@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+PROJECTS_DIR=~/Work/
+
 if [[ $# -eq 1 ]]; then
   selected=$1
 else
-  selected=$(find ~/Projects ~/Projects/Forme ~/Projects/Clmbr ~/Projects/Personal ~/Scratchpad ~/TTRPG ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(find $PROJECTS_DIR $PROJECTS_DIR/Forme $PROJECTS_DIR/Personal ~/Scratchpad ~/TTRPG ~/ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
