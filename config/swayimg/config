@@ -206,8 +206,8 @@ Shift+Delete = exec rm -f '%' && echo "File removed: %"; skip_file
 Escape = exit
 q = exit
 # VIM
-h = step_right 5
-l = step_left 5
+h = step_left 5
+l = step_right 5
 k = step_up 5
 j = step_down 5
 # Mouse related
