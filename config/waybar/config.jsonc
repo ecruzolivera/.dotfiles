@@ -9,6 +9,7 @@
     "hyprland/workspaces"
   ],
   "modules-center": [
+    "privacy",
     "clock",
     "custom/update",
     "custom/screenrecording-indicator"
@@ -21,7 +22,8 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    "battery"
+    "battery",
+    "power-profiles-daemon"
   ],
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -174,5 +176,44 @@
     "critical-threshold": 80,
     "format-critical": "",
     "format": ""
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "privacy": {
+    "icon-spacing": 4,
+    "icon-size": 10,
+    "transition-duration": 250,
+    "modules": [
+      {
+        "type": "screenshare",
+        "tooltip": true,
+        "tooltip-icon-size": 10
+      },
+      {
+        "type": "audio-in",
+        "tooltip": true,
+        "tooltip-icon-size": 10
+      }
+    ],
+    "ignore-monitor": true,
+    "ignore": [
+      {
+        "type": "audio-in",
+        "name": "cava"
+      },
+      {
+        "type": "screenshare",
+        "name": "obs"
+      }
+    ]
   }
 }
