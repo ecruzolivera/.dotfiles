@@ -15,6 +15,7 @@
   ],
   "modules-right": [
     "tray",
+    "temperature",
     "memory",
     "cpu",
     "bluetooth",
@@ -167,5 +168,11 @@
   "tray": {
     "icon-size": 12,
     "spacing": 12
+  },
+  "temperature": {
+    "thermal-zone": 8, // CPU temperature
+    "critical-threshold": 80,
+    "format-critical": "",
+    "format": ""
   }
 }

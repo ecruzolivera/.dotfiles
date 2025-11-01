@@ -33,6 +33,7 @@
 #tray,
 #cpu,
 #memory,
+#temperature,
 #battery,
 #network,
 #bluetooth,
@@ -62,6 +63,10 @@ tooltip {
 
 .hidden {
   opacity: 0;
+}
+
+#temperature.critical {
+  color: #a55555;
 }
 
 #custom-screenrecording-indicator {
