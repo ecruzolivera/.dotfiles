@@ -19,8 +19,8 @@ anchor_right = true
 
 [keybinds]
 close = ["Escape"]
-next = ["Down"]
-previous = ["Up"]
+next = ["ctrl j"]
+previous = ["ctrl k"]
 toggle_exact = ["ctrl e"]
 resume_last_query = ["ctrl r"]
 quick_activate = []
