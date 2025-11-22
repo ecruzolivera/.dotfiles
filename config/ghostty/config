@@ -1,7 +1,7 @@
 font-family = "FiraCode Nerd Font Mono"
 font-family-bold = "FiraCode Nerd Font Mono Bold"
-font-family-italic = "FiraCode Nerd Font Mono Bold Light" 
-font-family-bold-italic = "FiraCode Nerd Font SemBd"
+font-family-italic = "JetBrainsMono NFM Italic" 
+font-family-bold-italic = "JetBrainsMono NFM Bold Italic"
 font-size = 12 
 font-feature = "liga"
 theme = OneDark
