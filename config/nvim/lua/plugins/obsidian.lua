@@ -1,3 +1,4 @@
+if true then return {} end
 return {
   "obsidian-nvim/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
