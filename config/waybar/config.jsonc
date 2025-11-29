@@ -39,6 +39,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
+      "10": "0",
       "active": "󱓻"
     },
     "persistent-workspaces": {
@@ -142,9 +143,10 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": "󰂱",
+    "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "blueberry"
+    "on-click": "omarchy-launch-bluetooth"
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -166,7 +168,7 @@
     "spacing": 12
   },
   "temperature": {
-    "thermal-zone": 8, // CPU temperature
+    "thermal-zone": 4,
     "critical-threshold": 80,
     "format-critical": "",
     "format": ""
