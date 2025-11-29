@@ -1,5 +1,6 @@
 [tools]
 go = "latest"
+java = "20"
 node = "22"
 
 [settings]
