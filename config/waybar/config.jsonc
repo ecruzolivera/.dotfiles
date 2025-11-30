@@ -169,7 +169,7 @@
   },
   "temperature": {
     "thermal-zone": 0,
-    "critical-threshold": 70,
+    "critical-threshold": 80,
     "format-critical": "",
     "format": ""
   },
