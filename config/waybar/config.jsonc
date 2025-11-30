@@ -168,8 +168,8 @@
     "spacing": 12
   },
   "temperature": {
-    "thermal-zone": 4,
-    "critical-threshold": 80,
+    "thermal-zone": 0,
+    "critical-threshold": 70,
     "format-critical": "",
     "format": ""
   },
