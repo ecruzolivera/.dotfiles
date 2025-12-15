@@ -77,7 +77,7 @@ return {
         [";"] = { ":", desc = "Easy colon" },
 
         -- search files
-        ["<C-k>"] = {
+        ["<C-p>"] = {
           function()
             require("snacks").picker.files {
               hidden = vim.tbl_get((vim.uv or vim.loop).fs_stat ".git" or {}, "type") == "directory",
