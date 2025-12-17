@@ -87,7 +87,6 @@ SAVEHIST=$HISTSIZE    # Number of entries in history file
 export HISTCONTROL=ignoreboth:erasedups
 
 # Make nvim the default editor
-
 export EDITOR='nvim'
 export SUDO_EDITOR="$EDITOR"
 export VISUAL="$EDITOR"
@@ -144,6 +143,11 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+
+# make GTK use ibus for dead keys support
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -220,7 +224,7 @@ function yy() {
 # pnpm
 export PNPM_HOME="/home/ernesto/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
