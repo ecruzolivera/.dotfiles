@@ -69,6 +69,25 @@ tooltip {
 
 #temperature.critical {
   color: #a55555;
+  animation: blink 2s linear infinite;
+}
+
+#cpu.warning {
+  color: #f1ff44;
+}
+
+#cpu.critical {
+  color: #a55555;
+  animation: blink 2s linear infinite;
+}
+
+#memory.warning {
+  color: #f1ff44;
+}
+
+#memory.critical {
+  color: #a55555;
+  animation: blink 2s linear infinite;
 }
 
 #custom-screenrecording-indicator {
